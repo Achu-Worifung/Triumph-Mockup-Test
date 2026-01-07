@@ -8,9 +8,13 @@ body {
 
 
 .gap-36 {
-  gap: 36px;
+  gap: 36px !important;
 }
 
+
+.rounded-48 {
+  border-radius: 48px !important;
+}
 .span-flat 
 {
   position: absolute;

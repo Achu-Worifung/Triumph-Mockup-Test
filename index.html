@@ -176,63 +176,72 @@
 
     <!-- Mission section  -->
     <section
-      class="container-fluid py-5 position-relative mission-section mt-5"
+      class="container-fluid py-5 position-relative mission-section mt-5 rounded-48"
     >
-    <img src="./public/wavybg.jpg" class="position-absolute w-100 h-100 mission-bg"/>
-      <div>
+    <img src="./public/dip.svg" alt="dip" class="position-absolute dip " />
+    <img src="./public/arrow.svg" alt="arrow" class="position-absolute arrow" />
+      <img
+        src="./public/wavybg.jpg"
+        class="position-absolute w-100 h-100 mission-bg"
+      />
+      <div class="mt-5">
         <!-- Header -->
         <div
-          class="mission-section mx-auto text-center d-flex flex-column gap-4 mission-header align-items-center"
+          class="mx-auto text-center d-flex flex-column gap-4 mission-header align-items-center"
         >
-          <h1 class="fw-bold text-center text-dark">Our Mission is Simple</h1>
-          <p class="fw-bold text-center opacity-80 fw-normal w-75">
+          <h1 class="fw-bold text-center text-light">Our Mission is Simple</h1>
+          <p class="text-center opacity-80 fw-normal w-75 text-light">
             <strong>The gospel is the good news of Jesus:</strong> That Jesus
             lived a sinless life in my place, died the death that I deserved.
           </p>
         </div>
 
         <!-- Three Cards -->
-        <div class="row g-36 container my-5 mx-auto">
-          <div
-            class="card-hover text-center p-4 bg-white rounded-3 shadow-sm col-lg-4 col-md-6"
-          >
-            <div class="icon-wrapper mx-auto mb-3">
-              <img src="./public/watch.svg" alt="Watch a Message Icon" />
+        <div class="row g-5 container my-3 mx-auto">
+          <div class="col-lg-4 col-md-6">
+            <div class="card-hover text-center bg-white p-4 rounded-3 shadow-sm">
+              <div class="icon-wrapper mx-auto mb-3">
+                <img src="./public/watch.svg" alt="Watch a Message Icon" />
+              </div>
+              <h3 class="card-title mb-3">Watch a Message</h3>
+              <p class="card-text mb-4">
+                Catch up on the latest and past weekend service messages
+                anytime, anywhere.
+              </p>
+              <a href="#" class="card-link">Catch Our Latest Message</a>
             </div>
-            <h3 class="card-title mb-3">Watch a Message</h3>
-            <p class="card-text mb-4">
-              Catch up on the latest and past weekend service messages anytime,
-              anywhere.
-            </p>
-            <a href="#" class="card-link">Catch Our Latest Message</a>
           </div>
 
-          <div
-            class="card-hover text-center p-4 bg-white rounded-3 shadow-sm col-lg-4 col-md-6"
-          >
-            <div class="icon-wrapper mx-auto mb-3">
-              <img src="./public/location.svg" alt="Find a Location Icon" />
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card-hover text-center p-4 bg-white rounded-3 shadow-sm"
+            >
+              <div class="icon-wrapper mx-auto mb-3">
+                <img src="./public/location.svg" alt="Find a Location Icon" />
+              </div>
+              <h3 class="card-title mb-3">Find a Location</h3>
+              <p class="card-text mb-4">
+                Easily find a campus near you. Join us in person and get
+                connected.
+              </p>
+              <a href="#" class="card-link">Search Our Campuses</a>
             </div>
-            <h3 class="card-title mb-3">Find a Location</h3>
-            <p class="card-text mb-4">
-              Easily find a campus near you. Join us in person and get
-              connected.
-            </p>
-            <a href="#" class="card-link">Search Our Campuses</a>
           </div>
 
-          <div
-            class="card-hover text-center p-4 bg-white rounded-3 shadow-sm col-lg-4 col-md-6 gap-32"
-          >
-            <div class="icon-wrapper mx-auto mb-3">
-              <img src="./public/connected.svg" alt="Get Connected Icon" />
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card-hover text-center p-4 bg-white rounded-3 shadow-sm"
+            >
+              <div class="icon-wrapper mx-auto mb-3">
+                <img src="./public/connected.svg" alt="Get Connected Icon" />
+              </div>
+              <h3 class="card-title mb-3">Get Connected</h3>
+              <p class="card-text mb-4">
+                Stay connected and in the loop—sign up for updates, events, and
+                ways to get involved.
+              </p>
+              <a href="#" class="card-link">Contact Us</a>
             </div>
-            <h3 class="card-title mb-3">Get Connected</h3>
-            <p class="card-text mb-4">
-              Stay connected and in the loop—sign up for updates, events, and
-              ways to get involved.
-            </p>
-            <a href="#" class="card-link">Contact Us</a>
           </div>
 
           <!-- Gospel Section -->
@@ -241,7 +250,7 @@
             <!-- Left big text column -->
             <div class="left-text">
               <p class="welcome fw-bold fs-20 mb-0">GOSPEL</p>
-              <h1 class="fw-bold fs-32 welcome-exposure">
+              <h1 class="fw-bold fs-32 welcome-exposure text-light">
                 The gospel is what should characterize us. It should be our
                 identity: We are a gospel people.
               </h1>
@@ -249,7 +258,7 @@
 
             <!-- Right smaller paragraph column -->
             <div class="text-right mt-auto">
-              <p class="m-0 text-left fs-normal">
+              <p class="m-0 text-left fs-normal text-light ">
                 <strong> The gospel is the good news of Jesus:</strong> That
                 Jesus lived a sinless life in my place, died the death that I
                 deserved, and rose to life again. And whoever believes in him
@@ -259,19 +268,17 @@
           </div>
 
           <!-- Disciples Image -->
-          <div class="row mt-4">
-            <div class="col-12">
+               <div class="container mt-4 position-relative gospel-container">
               <img
                 src="./public/deciples.png"
                 alt="Disciples"
-                class="gospel-img w-100 mt-5"
+                class="w-100 mt-5 gospel-img "
               />
-            </div>
           </div>
+      
         </div>
       </div>
     </section>
-
     <!-- love section  -->
     <section class="container-fluid text-center" style="position: relative">
       <span class="span-flat bg-dark"> </span>
