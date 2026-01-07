@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	if (typeof Swiper !== 'undefined') {
 		var swiper = new Swiper('.mySwiper', {
-			slidesPerView: 3,
+			slidesPerView: 7,
 			spaceBetween: 20,
 			loop: true,
 			pagination: {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				},
 				// >= 992px
 				992: {
-					slidesPerView: 3,
+					slidesPerView: 7,
 					spaceBetween: 20,
 				}
 			}
