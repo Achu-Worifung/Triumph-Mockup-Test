@@ -5,362 +5,653 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="wavy.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="herosection.css" />
     <script src="script.js" defer></script>
-   
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- font awesome link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- swiper link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
 
     <title>Who we are</title>
   </head>
   <body>
     <nav class="main-nav">
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="navbar-header">
-
-            <!-- Logo -->
-            <section class="logo-section">
-                <img src="./public/logo.svg" alt="logo" />
-                <span class="logo-text">
-                    <h1>Rock Solid</h1>
-                    <p>CHRISTIAN CHURCH</p>
-                </span>
-            </section>
-
-            <!-- Centered navigation -->
-            <section class="mx-auto center-nav">
-                <ul class="nav-links text-white d-flex gap-4 align-items-center">
-                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Plan A Visit</a></li>
-                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Who We Are</a></li>
-                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Connect</a></li>
-                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Ministries</a></li>
-                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Events</a></li>
-                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Media</a></li>
-                    <li class="default-item"><a href="#" class="text-white text-decoration-none">Give Online</a></li>
-                    <li class="menu-icon bg-light text-dark nav-indicator"><i class="fa-solid fa-bars" style="font-size: 22px;"></i></li>
-                </ul>
-            </section>
-
-            <!-- Right account -->
-            <section class="account-section d-flex align-items-center justify-content-center ">
-                <i class="fa-regular fa-user"></i>
-                <p class="m-0 fw-normal">Create Account</p>
-            </section>
-
-        </div>
-    </div>
-</nav>
-
-
-    <!-- main stage  -->
-     <div class="container-fluid mainstage ">
-        <img src="./public/mainstage.jpg" alt="state"/>
-        <section class="d-flex flex-column gap-5 ">
-            <h1 style="font-weight: 900; line-height: 96px; font-size: 5vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="text-center">We're Glad You're Here</h1>
-            <p style="width: 80%; max-width: 879px; height: auto; text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.25); margin: 0 auto; flex: none; order: 1; flex-grow: 0; font-family: 'Inter', sans-serif; font-weight: 500; font-style: normal; font-size: 2vw; line-height: 3vw; letter-spacing: 0%; text-align: center; white-space: normal;">We are a thriving and diverse community of real people experiencing real life together.</p>
-            <span class="d-flex justify-content-center align-items-center gap-3">
-                <button type="button" class="btn btn-lg bg-light text-dark" >Plan a Visit</button>
-                <button type="button" class="btn btn-secondary btn-lg">About Us</button>
-            </span>
-        </section>
-         <section class="container-fluid d-flex justify-content-between align-items-center">
-    <div class="d-flex flex-column align-items-center mx-auto">
-        <!-- count down  -->
-        <p class="mb-1">Next Service Starts in:</p>
-        <p class="mb-0">
-            <span id="days">00</span>:
-            <span id="hours">00</span>:
-            <span id="minutes">00</span>:
-            <span id="seconds">00</span>
-        </p>
-    </div>
-  <!-- hero icons  -->
-    <div class="d-flex align-items-center gap-3 text-white pr-24px" style="padding: 0 32px 0 0 ;">
-        <i class="fa-brands fa-facebook-f" style="width: 24px;"></i>
-        <i class="fa-brands fa-facebook-f" style="width: 24px;"></i>
-
-        
-
-        <i class="fa-brands fa-instagram " ></i>
-        <i class="fa-brands fa-youtube" style="width: 24px;"></i>
-    </div>
-</section>
-
-       
-
-     </div>
-     <!-- welcome to rock solid section  -->
-     <section class="container">
-        <h2>WELCOME TO ROCK SOLID</h2>
-        <span class="row">
-            <h1 class="col-sm-6">Following the Holy Spirit, we exist to create a movement of disciple-making disciples.</h1>
-            <p class="col-sm-6">Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in authentic unity.</p>
-
-        </span>
-        <img src="./public/Christ.png" alt="state" class="cross"/>
-
-     </section>
-
-     <!-- wavy section  -->
-      <div class="container-fluid py-5">
-        <div style="background-image: url(./public/wavybg.jpg); border-radius: 30px; padding: 60px 40px; color: white; position: relative; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
-            
-            <!-- Header -->
-            <div class="text-center mb-5" style="position: relative; z-index: 1;">
-                <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">Our Mission is Simple</h1>
-                <p style="font-size: 1rem; opacity: 0.95; margin-bottom: 50px;">
-                    <strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that I deserved.
-                </p>
-            </div>
-            
-            <!-- Three Cards -->
-            <div class="row g-4 mb-5" style="position: relative; z-index: 1;">
-                <div class="col-lg-4 col-md-6">
-                    <div style="background: white; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;" 
-                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
-                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
-                        <div style="width: 80px; height: 80px;  display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;  background: white;">
-                            <img src="./public/watch.svg"/>
-                        </div>
-                        <h3 style="color: #333; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Watch a Message</h3>
-                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">Catch up on the latest and past weekend service messages anytime, anywhere.</p>
-                        <a href="#" style="color: #ff5722; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.3s ease;" 
-                           onmouseover="this.style.opacity='0.7'" 
-                           onmouseout="this.style.opacity='1'">Catch Our Latest Message</a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div style="background: white; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;" 
-                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
-                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
-                        <div style="width: 80px; height: 80px;  display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;  background: white;">
-                            <img src="./public/location.svg"></i>
-                        </div>
-                        <h3 style="color: #333; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Find a Location</h3>
-                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">Easily find a campus near you. Join us in person and get connected.</p>
-                        <a href="#" style="color: #ff5722; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.3s ease;" 
-                           onmouseover="this.style.opacity='0.7'" 
-                           onmouseout="this.style.opacity='1'">Search Our Campuses</a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div style="background: white; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;" 
-                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
-                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
-                        <div style="width: 80px; height: 80px;  display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;  background: white;">
-                            <img src="./public/connected.svg"></i>
-                        </div>
-                        <h3 style="color: #333; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Get Connected</h3>
-                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">Stay connected and in the loop—sign up for updates, events, and ways to get involved.</p>
-                        <a href="#" style="color: #ff5722; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.3s ease;" 
-                           onmouseover="this.style.opacity='0.7'" 
-                           onmouseout="this.style.opacity='1'">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Gospel Section -->
-            <div style="margin-top: 50px; position: relative; z-index: 1;">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div style="color: rgba(255,255,255,0.9); font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px;">GOSPEL</div>
-                        <h2 style="font-size: 1.8rem; font-weight: 700; line-height: 1.4; margin-bottom: 30px;">
-                            The gospel is what should characterize us. It should be our identity: We are a gospel people.
-                        </h2>
-                    </div>
-                    <div class="col-lg-6">
-                        <p style="font-size: 1rem; line-height: 1.7; opacity: 0.95;">
-                            <strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that I deserved, and rose to life again. And whoever believes in him has eternal life.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Disciples Image -->
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <img src="./public/deciples.png" alt="Disciples" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); margin-top: 30px; " class="deciples-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     <!-- love section  -->
-    <section class="container-fluid text-center " style="position: relative; ">
-        <span class="span-flat bg-dark"> </span>
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="h1">
-                    <span class="text-black">ROCK SOLID CHURCH CONTINUES <br />TO HOLD OUT  </span>
-                    <span class="text-warning">LOVE</span>
-                    <span class="text-muted">AND HOPE TO <br/> THE ENTIRE WORLD</span>
-                </p>
-                <button type="button" class="btn center-block" style="background-color: black; color: white; margin-top: 20px;">Plan a Visit</button>
-            </div>
-        </div>
-        <span class="span-height bg-dark"> </span>
-     </section>
-     <img src="./public//connected.svg" alt="connected" class="mx-auto" style="width: 25px; height: 25px;"/>
-     <section>
-        <p class="h1 text-center">Find a Place to Volunteer</p>
-        <p class="text-center">Explore our ministries—find your place, grow in faith,<br/> and connect with a vibrant community!</p>
-     </section>
-
-<div class="swiper mySwiper container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./public/1st.png" alt="1st" />
-        <p>Worship</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/2nd.png" alt="2nd" />
-        <p>Prayer & Care</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/3rd.png" alt="3rd" />
-        <p>Kids</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/4th.png" alt="4th" />
-        <p>Students</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/5th.png" alt="5th" />
-        <p>Worship</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/6th.png" alt="6th" />
-        <p>Men</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/7th.png" alt="7th" />
-        <p>Women</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/8th.png" alt="8th" />
-        <p>Small group</p>
-      </div>
-      <div class="swiper-slide">
-        <img src="./public/9th.png" alt="9th" />
-        <p>Worship</p>
-      </div>
-    </div>
-  </div>
-
-  <section class="container-fluid story-section">
-    <div class="row align-items-center">
-      <div class="col-md-5 col-sm-12 story-text">
-        <h2>Saved Lives Are<br/>Changed Lives.</h2>
-        <p>
-          Feature stories about how Rock Solid Church is making a difference in our city.
-        </p>
-        <button type="button" class="btn btn-warning btn-lg">Share Your Story</button>
-      </div>
-      <div class="col-md-7 col-sm-12">
-        <div class="row no-gutter story-grid">
-          <div class="col-sm-8 col-xs-12">
-            <div class="story-tile story-large">
-              <img src="./public/road to peace.png" alt="Joshua's Road to Peace" class="img-fluid"/>
-              <p class="story-caption">Joshua's Road to Peace</p>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12">
-            <div class="story-tile">
-              <img src="./public/any means.png" alt="By Any Means Necessary" class="img-fluid"/>
-              <p class="story-caption">By Any Means Necessary</p>
-            </div>
-            <div class="story-tile">
-              <img src="./public/hope.png" alt="Holding on to Hope" class="img-fluid"/>
-              <p class="story-caption">Holding on to Hope</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="container-fluid">
-    <div class="container">
-      <div class="row footer-main">
-        <!-- Left Column: Logo, Address, Phone, Social -->
-        <div class="col-md-4 col-sm-12 footer-left">
-          <div class="">
-            <img src="./public/logo-black.svg" alt="logo"/>
-            <span>
-              <h3>ROCK SOLID</h3>
+          <!-- Logo -->
+          <section class="logo-section">
+            <img src="./public/logo.svg" alt="logo" />
+            <span class="logo-text">
+              <h1>Rock Solid</h1>
               <p>CHRISTIAN CHURCH</p>
             </span>
-          </div>
-          <div class="footer-contact">
-            <p>11340 W. Bell Road, Suite 200<br/>Surprise, AZ 85378</p>
-            <p>(000) 000-0000</p>
-          </div>
-          <div class="footer-social">
-            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-        
-        <!-- Right Column: Buttons and Links -->
-        <div class="col-md-8 col-sm-12 footer-right">
-          <!-- Top Buttons -->
-          <div class="footer-buttons text-right">
-            <button type="button" class="btn btn-dark btn-lg">PLAN A VISIT</button>
-            <button type="button" class="btn btn-outline btn-lg">Log In</button>
-          </div>
-          
-          <!-- Link Columns -->
-          <div class="row footer-links">
-            <div class="col-sm-6">
-              <h4>QUICK LINKS</h4>
-              <ul class="list-unstyled">
-                <li><a href="#">About Rock Solid</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Ministries</a></li>
-                <li><a href="#">Serving</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6">
-              <h4>GET IN TOUCH</h4>
-              <ul class="list-unstyled">
-                <li><a href="#">Plan a Visit Request</a></li>
-                <li><a href="#">Prayer</a></li>
-                <li><a href="#">Get Help</a></li>
-                <li><a href="#">Job Openings</a></li>
-                <li><a href="#">Report an Issue</a></li>
-              </ul>
-            </div>
-          </div>
+          </section>
+
+          <!-- Centered navigation -->
+          <section class="mx-auto center-nav">
+            <ul class="nav-links text-white d-flex gap-4 align-items-center">
+              <li class="nav-indicator">
+                <a href="#" class="text-white text-decoration-none"
+                  >Plan A Visit</a
+                >
+              </li>
+              <li class="nav-indicator">
+                <a href="#" class="text-white text-decoration-none"
+                  >Who We Are</a
+                >
+              </li>
+              <li class="nav-indicator">
+                <a href="#" class="text-white text-decoration-none">Connect</a>
+              </li>
+              <li class="nav-indicator">
+                <a href="#" class="text-white text-decoration-none"
+                  >Ministries</a
+                >
+              </li>
+              <li class="nav-indicator">
+                <a href="#" class="text-white text-decoration-none">Events</a>
+              </li>
+              <li class="nav-indicator">
+                <a href="#" class="text-white text-decoration-none">Media</a>
+              </li>
+              <li class="default-item">
+                <a href="#" class="text-white text-decoration-none"
+                  >Give Online</a
+                >
+              </li>
+              <li class="menu-icon bg-light text-dark nav-indicator">
+                <i class="fa-solid fa-bars" style="font-size: 22px"></i>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Right account -->
+          <section
+            class="account-section d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-regular fa-user"></i>
+            <p class="m-0 fw-normal">Create Account</p>
+          </section>
         </div>
       </div>
-      
-      <!-- Footer Bottom -->
-      <div class="row footer-bottom">
-        <div class="col-xs-12 text-center">
-          <p>&copy; 2025 | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </nav>
+
+    <!-- hero section  -->
+    <div class="container-fluid mainstage">
+      <img src="./public/mainstage.jpg" alt="state" />
+      <section class="hero-content d-flex flex-column gap-5 text-center">
+        <h1 class="hero-title">We're Glad You're Here</h1>
+
+        <p class="hero-text">
+          We are a thriving and diverse community of real people experiencing
+          real life together.
+        </p>
+
+        <!-- hero buttons  -->
+        <span class="hero-buttons d-flex justify-content-center gap-3">
+          <button type="button" class="btn btn-lg bg-light text-dark">
+            Plan a Visit
+          </button>
+          <button type="button" class="btn btn-secondary btn-lg">
+            About Us
+          </button>
+        </span>
+      </section>
+
+      <!-- next sunday countdown section  -->
+      <section
+        class="container-fluid d-flex justify-content-between align-items-center p-0"
+      >
+        <div class="countdown text-center">
+          <p class="countdown-label">Next Service Starts in:</p>
+          <p class="countdown-time">
+            <span id="days">00</span>: <span id="hours">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+          </p>
+        </div>
+
+        <!-- hero icons  -->
+        <div
+          class="d-flex align-items-center gap-3 text-white pr-24px position-absolute social-icons"
+        >
+          <i class="fa-brands fa-facebook-f" style="font-size: 22px"></i>
+          <i class="fa-brands fa-facebook-f" style="font-size: 22px"></i>
+
+          <i class="fa-brands fa-instagram" style="font-size: 22px"></i>
+          <i class="fa-brands fa-youtube" style="font-size: 22px"></i>
+        </div>
+      </section>
+    </div>
+
+
+
+    <!-- welcome to rock solid section  -->
+    <section class="container">
+      <h2>WELCOME TO ROCK SOLID</h2>
+      <span class="row">
+        <h1 class="col-sm-6">
+          Following the Holy Spirit, we exist to create a movement of
+          disciple-making disciples.
+        </h1>
+        <p class="col-sm-6">
+          Rock Solid Church is committed to creating a movement of
+          disciple-making disciples—men and women who reflect the diversity of
+          our community, lived out in authentic unity.
+        </p>
+      </span>
+      <img src="./public/Christ.png" alt="state" class="cross" />
+    </section>
+
+    <!-- wavy section  -->
+    <div class="container-fluid py-5">
+      <div
+        style="
+          background-image: url(./public/wavybg.jpg);
+          border-radius: 30px;
+          padding: 60px 40px;
+          color: white;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Header -->
+        <div class="text-center mb-5" style="position: relative; z-index: 1">
+          <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px">
+            Our Mission is Simple
+          </h1>
+          <p style="font-size: 1rem; opacity: 0.95; margin-bottom: 50px">
+            <strong>The gospel is the good news of Jesus:</strong> That Jesus
+            lived a sinless life in my place, died the death that I deserved.
+          </p>
+        </div>
+
+        <!-- Three Cards -->
+        <div class="row g-4 mb-5" style="position: relative; z-index: 1">
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="
+                background: white;
+                border-radius: 20px;
+                padding: 40px 30px;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                height: 100%;
+              "
+              onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'"
+            >
+              <div
+                style="
+                  width: 80px;
+                  height: 80px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 20px;
+                  font-size: 32px;
+                  background: white;
+                "
+              >
+                <img src="./public/watch.svg" />
+              </div>
+              <h3
+                style="
+                  color: #333;
+                  font-weight: 700;
+                  margin-bottom: 15px;
+                  font-size: 1.3rem;
+                "
+              >
+                Watch a Message
+              </h3>
+              <p
+                style="
+                  color: #666;
+                  font-size: 0.95rem;
+                  margin-bottom: 20px;
+                  line-height: 1.6;
+                "
+              >
+                Catch up on the latest and past weekend service messages
+                anytime, anywhere.
+              </p>
+              <a
+                href="#"
+                style="
+                  color: #ff5722;
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 0.95rem;
+                  transition: opacity 0.3s ease;
+                "
+                onmouseover="this.style.opacity='0.7'"
+                onmouseout="this.style.opacity='1'"
+                >Catch Our Latest Message</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="
+                background: white;
+                border-radius: 20px;
+                padding: 40px 30px;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                height: 100%;
+              "
+              onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'"
+            >
+              <div
+                style="
+                  width: 80px;
+                  height: 80px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 20px;
+                  font-size: 32px;
+                  background: white;
+                "
+              >
+                <img src="./public/location.svg" />
+              </div>
+              <h3
+                style="
+                  color: #333;
+                  font-weight: 700;
+                  margin-bottom: 15px;
+                  font-size: 1.3rem;
+                "
+              >
+                Find a Location
+              </h3>
+              <p
+                style="
+                  color: #666;
+                  font-size: 0.95rem;
+                  margin-bottom: 20px;
+                  line-height: 1.6;
+                "
+              >
+                Easily find a campus near you. Join us in person and get
+                connected.
+              </p>
+              <a
+                href="#"
+                style="
+                  color: #ff5722;
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 0.95rem;
+                  transition: opacity 0.3s ease;
+                "
+                onmouseover="this.style.opacity='0.7'"
+                onmouseout="this.style.opacity='1'"
+                >Search Our Campuses</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              style="
+                background: white;
+                border-radius: 20px;
+                padding: 40px 30px;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                height: 100%;
+              "
+              onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'"
+            >
+              <div
+                style="
+                  width: 80px;
+                  height: 80px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 20px;
+                  font-size: 32px;
+                  background: white;
+                "
+              >
+                <img src="./public/connected.svg" />
+              </div>
+              <h3
+                style="
+                  color: #333;
+                  font-weight: 700;
+                  margin-bottom: 15px;
+                  font-size: 1.3rem;
+                "
+              >
+                Get Connected
+              </h3>
+              <p
+                style="
+                  color: #666;
+                  font-size: 0.95rem;
+                  margin-bottom: 20px;
+                  line-height: 1.6;
+                "
+              >
+                Stay connected and in the loop—sign up for updates, events, and
+                ways to get involved.
+              </p>
+              <a
+                href="#"
+                style="
+                  color: #ff5722;
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 0.95rem;
+                  transition: opacity 0.3s ease;
+                "
+                onmouseover="this.style.opacity='0.7'"
+                onmouseout="this.style.opacity='1'"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Gospel Section -->
+        <div style="margin-top: 50px; position: relative; z-index: 1">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div
+                style="
+                  color: rgba(255, 255, 255, 0.9);
+                  font-size: 0.75rem;
+                  font-weight: 600;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  margin-bottom: 15px;
+                "
+              >
+                GOSPEL
+              </div>
+              <h2
+                style="
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  line-height: 1.4;
+                  margin-bottom: 30px;
+                "
+              >
+                The gospel is what should characterize us. It should be our
+                identity: We are a gospel people.
+              </h2>
+            </div>
+            <div class="col-lg-6">
+              <p style="font-size: 1rem; line-height: 1.7; opacity: 0.95">
+                <strong>The gospel is the good news of Jesus:</strong> That
+                Jesus lived a sinless life in my place, died the death that I
+                deserved, and rose to life again. And whoever believes in him
+                has eternal life.
+              </p>
+            </div>
+          </div>
+
+          <!-- Disciples Image -->
+          <div class="row mt-4">
+            <div class="col-12">
+              <img
+                src="./public/deciples.png"
+                alt="Disciples"
+                style="
+                  width: 100%;
+                  border-radius: 20px;
+                  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+                  margin-top: 30px;
+                "
+                class="deciples-img"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
 
+    <!-- love section  -->
+    <section class="container-fluid text-center" style="position: relative">
+      <span class="span-flat bg-dark"> </span>
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="h1">
+            <span class="text-black"
+              >ROCK SOLID CHURCH CONTINUES <br />TO HOLD OUT
+            </span>
+            <span class="text-warning">LOVE</span>
+            <span class="text-muted"
+              >AND HOPE TO <br />
+              THE ENTIRE WORLD</span
+            >
+          </p>
+          <button
+            type="button"
+            class="btn center-block"
+            style="background-color: black; color: white; margin-top: 20px"
+          >
+            Plan a Visit
+          </button>
+        </div>
+      </div>
+      <span class="span-height bg-dark"> </span>
+    </section>
+    <img
+      src="./public//connected.svg"
+      alt="connected"
+      class="mx-auto"
+      style="width: 25px; height: 25px"
+    />
+    <section>
+      <p class="h1 text-center">Find a Place to Volunteer</p>
+      <p class="text-center">
+        Explore our ministries—find your place, grow in faith,<br />
+        and connect with a vibrant community!
+      </p>
+    </section>
+
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./public/1st.png" alt="1st" />
+          <p>Worship</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/2nd.png" alt="2nd" />
+          <p>Prayer & Care</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/3rd.png" alt="3rd" />
+          <p>Kids</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/4th.png" alt="4th" />
+          <p>Students</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/5th.png" alt="5th" />
+          <p>Worship</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/6th.png" alt="6th" />
+          <p>Men</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/7th.png" alt="7th" />
+          <p>Women</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/8th.png" alt="8th" />
+          <p>Small group</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./public/9th.png" alt="9th" />
+          <p>Worship</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-fluid story-section">
+      <div class="row align-items-center">
+        <div class="col-md-5 col-sm-12 story-text">
+          <h2>Saved Lives Are<br />Changed Lives.</h2>
+          <p>
+            Feature stories about how Rock Solid Church is making a difference
+            in our city.
+          </p>
+          <button type="button" class="btn btn-warning btn-lg">
+            Share Your Story
+          </button>
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <div class="row no-gutter story-grid">
+            <div class="col-sm-8 col-xs-12">
+              <div class="story-tile story-large">
+                <img
+                  src="./public/road to peace.png"
+                  alt="Joshua's Road to Peace"
+                  class="img-fluid"
+                />
+                <p class="story-caption">Joshua's Road to Peace</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <div class="story-tile">
+                <img
+                  src="./public/any means.png"
+                  alt="By Any Means Necessary"
+                  class="img-fluid"
+                />
+                <p class="story-caption">By Any Means Necessary</p>
+              </div>
+              <div class="story-tile">
+                <img
+                  src="./public/hope.png"
+                  alt="Holding on to Hope"
+                  class="img-fluid"
+                />
+                <p class="story-caption">Holding on to Hope</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row footer-main">
+          <!-- Left Column: Logo, Address, Phone, Social -->
+          <div class="col-md-4 col-sm-12 footer-left">
+            <div class="">
+              <img src="./public/logo-black.svg" alt="logo" />
+              <span>
+                <h3>ROCK SOLID</h3>
+                <p>CHRISTIAN CHURCH</p>
+              </span>
+            </div>
+            <div class="footer-contact">
+              <p>11340 W. Bell Road, Suite 200<br />Surprise, AZ 85378</p>
+              <p>(000) 000-0000</p>
+            </div>
+            <div class="footer-social">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right Column: Buttons and Links -->
+          <div class="col-md-8 col-sm-12 footer-right">
+            <!-- Top Buttons -->
+            <div class="footer-buttons text-right">
+              <button type="button" class="btn btn-dark btn-lg">
+                PLAN A VISIT
+              </button>
+              <button type="button" class="btn btn-outline btn-lg">
+                Log In
+              </button>
+            </div>
+
+            <!-- Link Columns -->
+            <div class="row footer-links">
+              <div class="col-sm-6">
+                <h4>QUICK LINKS</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Rock Solid</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Messages</a></li>
+                  <li><a href="#">Ministries</a></li>
+                  <li><a href="#">Serving</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <h4>GET IN TOUCH</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Plan a Visit Request</a></li>
+                  <li><a href="#">Prayer</a></li>
+                  <li><a href="#">Get Help</a></li>
+                  <li><a href="#">Job Openings</a></li>
+                  <li><a href="#">Report an Issue</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row footer-bottom">
+          <div class="col-xs-12 text-center">
+            <p>
+              &copy; 2025 | <a href="#">Terms of Service</a> |
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
