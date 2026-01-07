@@ -1,0 +1,37 @@
+
+.welcome 
+{
+line-height: 32px;
+letter-spacing: 0%;
+color: #ABABAB;
+}
+.left-text
+{
+  max-width: 547px;
+}
+.text-right
+{
+  max-width: 451px;
+}
+
+.text-right p 
+{
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #585858;
+}
+.welcome-exposure
+{
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #2E2320;
+}
+.cross {
+  border-radius: 24px;
+  width: 100%;
+  max-width: 1280px;
+  height: 385px;
+  gap: 17px;
+  object-fit: cover;
+  object-position: center 40%;
+}
