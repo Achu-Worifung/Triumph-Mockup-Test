@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="wavy.css" />
+    <link rel="stylesheet" href="herosection.css" />
     <script src="script.js" defer></script>
    
 
@@ -26,36 +28,44 @@
     <title>Who we are</title>
   </head>
   <body>
-    <!-- navigation bar  -->
-    <nav>
-        <div class="container-fluid">
-            <div class="navbar-header" style="position: relative;">
-                <section class="d-flex flex-row  text-white align-items-center p-0 gap-3 justify-content-center" style="width: 225.37px; height: 54.46px; position: absolute; left: 73px; top: 47px;">
-                    <img src="./public/logo.svg" alt="logo" style="width: 64.37px; height: 54.46px;"/>
-                    <span style="width: 149px; height: 54px;">
-                        <h1 class="fs-4 text-left m-0" style="font-weight: 900; line-height: 34px; width: 149px ; height: 36px;">Rock Solid</h1>
-                        <p class="fw-light text-left m-0"  style="width: 149px; height: 18px; line-height: 36px;">CHRISTIAN CHURCH</p>
-                    </span>
-                    
-                </section>
-                <section>
-                    <ul>
-                        <li><a href="#">Plan A Visit</a></li>
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">Connect</a></li>
-                        <li><a href="#">Ministries</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">Give Online</a></li>
-                        <li><i class="fa-solid fa-bars"></i></li>
-                    </ul>
-                </section>
-                <section>
-                    <i class="fa-regular fa-user"></i><p> Create Account</p>
-                </section>
-            </div>
-            <ul class="nav navbar-nav">
-    </nav>
+    <nav class="main-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!-- Logo -->
+            <section class="logo-section">
+                <img src="./public/logo.svg" alt="logo" />
+                <span class="logo-text">
+                    <h1>Rock Solid</h1>
+                    <p>CHRISTIAN CHURCH</p>
+                </span>
+            </section>
+
+            <!-- Centered navigation -->
+            <section class="mx-auto center-nav">
+                <ul class="nav-links text-white d-flex gap-4 align-items-center">
+                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Plan A Visit</a></li>
+                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Who We Are</a></li>
+                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Connect</a></li>
+                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Ministries</a></li>
+                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Events</a></li>
+                    <li class="nav-indicator"><a href="#" class="text-white text-decoration-none">Media</a></li>
+                    <li class="default-item"><a href="#" class="text-white text-decoration-none">Give Online</a></li>
+                    <li class="menu-icon bg-light text-dark nav-indicator"><i class="fa-solid fa-bars" style="font-size: 22px;"></i></li>
+                </ul>
+            </section>
+
+            <!-- Right account -->
+            <section class="account-section d-flex align-items-center justify-content-center ">
+                <i class="fa-regular fa-user"></i>
+                <p class="m-0 fw-normal">Create Account</p>
+            </section>
+
+        </div>
+    </div>
+</nav>
+
+
     <!-- main stage  -->
      <div class="container-fluid mainstage ">
         <img src="./public/mainstage.jpg" alt="state"/>
@@ -67,19 +77,29 @@
                 <button type="button" class="btn btn-secondary btn-lg">About Us</button>
             </span>
         </section>
-         <section>
-            <span class="d-flex flex-column justify-content-center align-items-center">
-                <p>Next Service Starts in:</p>
-                <p ><span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></p>
-                
-            </span>
-            <span>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </span>
-        </section>
+         <section class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="d-flex flex-column align-items-center mx-auto">
+        <!-- count down  -->
+        <p class="mb-1">Next Service Starts in:</p>
+        <p class="mb-0">
+            <span id="days">00</span>:
+            <span id="hours">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+        </p>
+    </div>
+  <!-- hero icons  -->
+    <div class="d-flex align-items-center gap-3 text-white pr-24px" style="padding: 0 32px 0 0 ;">
+        <i class="fa-brands fa-facebook-f" style="width: 24px;"></i>
+        <i class="fa-brands fa-facebook-f" style="width: 24px;"></i>
+
+        
+
+        <i class="fa-brands fa-instagram " ></i>
+        <i class="fa-brands fa-youtube" style="width: 24px;"></i>
+    </div>
+</section>
+
        
 
      </div>
@@ -95,9 +115,91 @@
 
      </section>
 
-     <section class="bg" style="background-image: url(./public/wavybg.jpg);">
-
-     </section>
+     <!-- wavy section  -->
+      <div class="container-fluid py-5">
+        <div style="background-image: url(./public/wavybg.jpg); border-radius: 30px; padding: 60px 40px; color: white; position: relative; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
+            
+            <!-- Header -->
+            <div class="text-center mb-5" style="position: relative; z-index: 1;">
+                <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">Our Mission is Simple</h1>
+                <p style="font-size: 1rem; opacity: 0.95; margin-bottom: 50px;">
+                    <strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that I deserved.
+                </p>
+            </div>
+            
+            <!-- Three Cards -->
+            <div class="row g-4 mb-5" style="position: relative; z-index: 1;">
+                <div class="col-lg-4 col-md-6">
+                    <div style="background: white; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;" 
+                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                        <div style="width: 80px; height: 80px;  display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;  background: white;">
+                            <img src="./public/watch.svg"/>
+                        </div>
+                        <h3 style="color: #333; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Watch a Message</h3>
+                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">Catch up on the latest and past weekend service messages anytime, anywhere.</p>
+                        <a href="#" style="color: #ff5722; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.3s ease;" 
+                           onmouseover="this.style.opacity='0.7'" 
+                           onmouseout="this.style.opacity='1'">Catch Our Latest Message</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div style="background: white; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;" 
+                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                        <div style="width: 80px; height: 80px;  display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;  background: white;">
+                            <img src="./public/location.svg"></i>
+                        </div>
+                        <h3 style="color: #333; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Find a Location</h3>
+                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">Easily find a campus near you. Join us in person and get connected.</p>
+                        <a href="#" style="color: #ff5722; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.3s ease;" 
+                           onmouseover="this.style.opacity='0.7'" 
+                           onmouseout="this.style.opacity='1'">Search Our Campuses</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div style="background: white; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;" 
+                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                        <div style="width: 80px; height: 80px;  display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;  background: white;">
+                            <img src="./public/connected.svg"></i>
+                        </div>
+                        <h3 style="color: #333; font-weight: 700; margin-bottom: 15px; font-size: 1.3rem;">Get Connected</h3>
+                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">Stay connected and in the loop—sign up for updates, events, and ways to get involved.</p>
+                        <a href="#" style="color: #ff5722; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.3s ease;" 
+                           onmouseover="this.style.opacity='0.7'" 
+                           onmouseout="this.style.opacity='1'">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gospel Section -->
+            <div style="margin-top: 50px; position: relative; z-index: 1;">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div style="color: rgba(255,255,255,0.9); font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px;">GOSPEL</div>
+                        <h2 style="font-size: 1.8rem; font-weight: 700; line-height: 1.4; margin-bottom: 30px;">
+                            The gospel is what should characterize us. It should be our identity: We are a gospel people.
+                        </h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <p style="font-size: 1rem; line-height: 1.7; opacity: 0.95;">
+                            <strong>The gospel is the good news of Jesus:</strong> That Jesus lived a sinless life in my place, died the death that I deserved, and rose to life again. And whoever believes in him has eternal life.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Disciples Image -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <img src="./public/deciples.png" alt="Disciples" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); margin-top: 30px; " class="deciples-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
      <!-- love section  -->
     <section class="container-fluid text-center " style="position: relative; ">

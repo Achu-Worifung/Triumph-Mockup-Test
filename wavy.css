@@ -1,0 +1,10 @@
+
+
+.deciples-img 
+{
+    height: 465px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    object-fit: cover;
+    object-position: center 60%;
+}

@@ -1,3 +1,12 @@
+//navigation menu toggle
+const menuIcon = document.querySelector('.menu-icon');
+const centerNav = document.querySelector('.center-nav');
+
+menuIcon.addEventListener('click', () => {
+    centerNav.classList.toggle('collapsed');
+});
+
+
 // Initialize Swiper to show multiple slides at once
 document.addEventListener('DOMContentLoaded', function () {
 	if (typeof Swiper !== 'undefined') {
