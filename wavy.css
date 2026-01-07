@@ -1,10 +1,86 @@
+.mission-section {
+  background: linear-gradient(#ff4d00, #ff6a00);
+}
+.mission-header {
+  line-height: 40px;
+  letter-spacing: 0%;
+  width: 723px;
+}
 
+.mission-header h1 {
+  line-height: 48px;
+}
+.mission-header p {
+  font-size: 1rem;
+  opacity: 0.95;
+  margin-bottom: 0;
+}
 
-.deciples-img 
-{
-    height: 465px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-    object-fit: cover;
-    object-position: center 60%;
+.card-hover {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: fit-content;
+  text-align: center;
+  background: white;
+  padding: 40px 30px;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  color: #ff5722;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.card-link:hover,
+.card-link:focus {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.gospel-img {
+  height: 465px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.mission-bg {
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+    object-position: 20% 50%;
+  width: 100%;
+  opacity: 0.3;
+  mix-blend-mode: hard-light;
 }
