@@ -98,17 +98,16 @@ img {
   padding: 0;
 
 }
-
-.dip,
-.arrow {
-  width: 138px;
-  height: 35px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: none;
+.dip 
+{
+  width: clamp(100px, 15vw, 138px);
+  height: clamp(30px, 4vw, 35px);
+}
+.arrow 
+{
+  width: clamp(100px, 15vw, 138px);
+  height: clamp(28px, 4vw, 35px);
 }
 
-#pause-play {
-  z-index: 100;
-}
+
+

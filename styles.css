@@ -71,12 +71,31 @@ body.nav-open {
   }
   
 }
-
+.volunteer-section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#pause-play
+{
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+}
+#pause-play:hover
+{
+  background-color: #EB3300;
+  border-radius: 10px;
+}
 @media (max-width:992px) {
 
  .rounded-48 {
   border-radius: 18px !important;
  }
+
+
 }
 
 .radius-16 {
@@ -180,6 +199,23 @@ body.nav-open {
   animation-range: entry 0% cover 30%;
 }
 
+.show-text 
+{
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
 
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
 
 /* Footer Styling */

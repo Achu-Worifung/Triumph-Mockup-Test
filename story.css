@@ -1,16 +1,30 @@
 
 
-.share-story-btn 
-{
-    background-color: #EB3300;
-    padding:12px 16px;
-    border-radius: 8px;
-    margin: 0;
-    line-height: 28xp;
+.share-story-btn {
+  background-color: #EB3300;
+  padding: 12px 16px;
+  border-radius: 8px;
+  line-height: 28px;
+  border: none;
+  cursor: pointer;
 
-
-
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
+
+.share-story-btn:hover {
+  background-color: #c12700;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(235, 51, 0, 0.35);
+}
+
+.share-story-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(235, 51, 0, 0.25);
+}
+
 
 .story-section {
   margin-top: 60px;

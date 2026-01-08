@@ -47,7 +47,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <title>Who we are</title>
+    <title>Rock Solid</title>
   </head>
   <body>
     <nav class="main-nav">
@@ -149,17 +149,17 @@
       </div>
     </nav>
 
-    <div class="mobile-nav-overlay d-none ">
+    <div class="mobile-nav-overlay d-none">
       <span class="close-mobile-nav">&times;</span>
-        <section
-            class="position-absolute d-flex justify-content-start align-items-end gap-1 logo-section"
-          >
-            <img src="./public/logo.svg" alt="logo" />
-            <span class="logo-text">
-              <h1 class="fs-28 fw-900 lh-48 m-0">Rock Solid</h1>
-              <p class="fw-light m-0">CHRISTIAN CHURCH</p>
-            </span>
-          </section>
+      <section
+        class="position-absolute d-flex justify-content-start align-items-end gap-1 logo-section"
+      >
+        <img src="./public/logo.svg" alt="logo" />
+        <span class="logo-text">
+          <h1 class="fs-28 fw-900 lh-48 m-0">Rock Solid</h1>
+          <p class="fw-light m-0">CHRISTIAN CHURCH</p>
+        </span>
+      </section>
       <ul class="mobile-nav-links list-unstyled text-center">
         <li><a href="#">Plan A Visit</a></li>
         <li><a href="#">Who We Are</a></li>
@@ -168,18 +168,16 @@
         <li><a href="#">Events</a></li>
         <li><a href="#">Media</a></li>
         <li><a href="#">Give Online</a></li>
-        
       </ul>
       <div
-          class=" d-flex align-items-center gap-3 text-white pr-24px  social-icons"
-        >
-          <i class="fa-brands fa-facebook-f fs-4"></i>
-          <i class="fa-brands fa-x-twitter fs-4"></i>
+        class="d-flex align-items-center gap-3 text-white pr-24px social-icons"
+      >
+        <i class="fa-brands fa-facebook-f fs-4"></i>
+        <i class="fa-brands fa-x-twitter fs-4"></i>
 
-          <i class="fa-brands fa-instagram fs-4"></i>
-          <i class="fa-brands fa-youtube fs-4"></i>
-        </div>
-       
+        <i class="fa-brands fa-instagram fs-4"></i>
+        <i class="fa-brands fa-youtube fs-4"></i>
+      </div>
     </div>
 
     <!-- hero section  -->
@@ -268,26 +266,37 @@
 
     <!-- Mission section  -->
     <section
-      class="container-fluid pt-5 position-relative mission-section rounded-48"
+      class="container-fluid mission-section position-relative rounded-48"
       style="margin-top: 150px"
     >
-      <img src="./public/dip.svg" alt="dip" class="position-absolute dip" />
-      <img
-        src="./public/arrow.svg"
-        alt="arrow"
-        class="position-absolute arrow"
-      />
+      <div
+        class="position-relative top-0 w-100 d-flex align-items-center justify-content-center"
+      >
+        <img
+          src="./public/dip.svg"
+          alt="dip"
+          class="position-absolute dip mx-auto top-0 pt-1"
+        />
+        <img
+          src="./public/arrow.svg"
+          alt="arrow"
+          class="position-absolute arrow mx-auto top-0"
+        />
+      </div>
+
       <img
         src="./public/wavybg.jpg"
-        class="position-absolute w-100  rounded-48 mission-bg"
+        class="position-absolute w-100 rounded-48 mission-bg"
       />
       <div class="mt-5">
         <!-- Header -->
         <div
           class="mx-auto text-center d-flex flex-column gap-3 w-md-50 align-items-center"
         >
-          <h1 class="fw-bold text-center text-light">Our Mission is Simple</h1>
-          <p class="text-center opacity-80 fw-normal text-light">
+          <h1 class="fw-bold text-center text-light show-text">
+            Our Mission is Simple
+          </h1>
+          <p class="text-center opacity-80 fw-normal text-light show-text">
             <strong>The gospel is the good news of Jesus:</strong> That Jesus
             lived a sinless life in my place, died the death that I deserved.
           </p>
@@ -369,13 +378,12 @@
           </div>
 
           <!-- Disciples Image -->
-         
-            <img
-              src="./public/deciples.png"
-              alt="Disciples"
-              class="mt-5 p-0 gospel-img "
-            />
-         
+
+          <img
+            src="./public/deciples.png"
+            alt="Disciples"
+            class="mt-5 p-0 gospel-img"
+          />
         </div>
       </div>
     </section>
@@ -396,33 +404,35 @@
               THE ENTIRE WORLD</span
             >
           </p>
-          <button type="button" class="btn center-block btn-visit text-light">
-            Plan a Visit
+          <button
+            type="button"
+            class="btn center-block btn-visit text-light visit-btn"
+          >
+            Plan A Visit
           </button>
         </div>
       </div>
       <span class="span-height bg-dark position-absolute"> </span>
     </section>
-    <img src="./public/connected.svg" alt="connected" class="red-icons pb-4 connected" />
-    <section class="position-relative">
-      <button
-        id="pause-play"
-        class="position-absolute bottom-0 end-0 my-0 me-5 rounded-circle social-icon"
-        style="width: 45px; height: 45px"
-      >
-        <i class="fa-solid fa-pause"></i>
-      </button>
-
+    <img
+      src="./public/connected.svg"
+      alt="connected"
+      class="red-icons pb-4 connected"
+    />
+    <section class="position-relative volunteer-section">
       <p class="h1 text-center fw-bold fs-48 volunteer">
         Find a Place to Volunteer
       </p>
       <p
-        class="text-center fw-normal mb-5 fs-18"
+        class="text-center fw-normal  fs-18"
         style="line-height: 1.3; color: #001d3a"
       >
         Explore our ministries—find your place, grow in faith,<br />
         and connect with a vibrant community!
       </p>
+      <button id="pause-play" class="mb-2">
+        <i class="fa-solid fa-pause"></i>
+      </button>
     </section>
 
     <!-- swiper section  -->
@@ -618,7 +628,7 @@
             class="col-lg-8 col-12 footer-right d-flex flex-column justify-content-center align-items-center align-items-lg-end"
           >
             <div class="footer-buttons mb-3 text-center text-lg-end">
-              <button type="button" class="btn btn-dark btn-lg">
+              <button type="button" class="btn btn-dark btn-lg visit-btn">
                 PLAN A VISIT
               </button>
               <button type="button" class="btn btn-outline btn-lg">
