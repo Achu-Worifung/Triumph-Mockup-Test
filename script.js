@@ -102,10 +102,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("days").textContent = days + "d";
-    document.getElementById("hours").textContent = hours + "h";
-    document.getElementById("minutes").textContent = minutes + "m";
-    document.getElementById("seconds").textContent = seconds + "s";
+    document.getElementById("days").textContent = days + "D";
+    document.getElementById("hours").textContent = hours + "H";
+    document.getElementById("minutes").textContent = minutes + "M";
+    document.getElementById("seconds").textContent = seconds + "S";
 
     setTimeout(updateCountdown, 1000);
   }
