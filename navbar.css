@@ -15,7 +15,7 @@
 
 /* LOGO */
 .logo-section {
-  left: 73px;
+  left: 43px;
   top: 47px;
   width: 225.37px;
   height: 54.46px;
@@ -167,7 +167,6 @@ li {
 
 
 
-/* COLLAPSE STATE */
 .center-nav.collapsed .nav-links li:not(.menu-icon) {
   opacity: 0;
   transform: scale(0.5);
@@ -178,13 +177,11 @@ li {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Smooth container shrink */
 .center-nav.collapsed {
   padding-left: 12px;
   padding-right: 12px;
 }
 
-/* Smooth container expand */
 .center-nav:not(.collapsed) {
   padding-left: 32px;
   padding-right: 32px;

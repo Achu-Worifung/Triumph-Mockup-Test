@@ -17,12 +17,27 @@ body {
 .rounded-48 {
   border-radius: 48px !important;
 }
-.fs-48px {
+.fs-48 {
   font-size:3rem
 }
 
 .fs-18 {
   font-size: 1.125rem;
+}
+.fs-32 {
+  font-size: 2rem;
+}
+@media (max-width:1400px) {
+  .fs-18 {
+    font-size: .98rem;
+  }
+  .fs-48 {
+    font-size: 2.5rem;
+  }
+  .fs-32 {
+    font-size: 1.75rem;
+  }
+  
 }
 
 .radius-16 {
