@@ -11,6 +11,9 @@ body {
   gap: 36px !important;
 }
 
+.letter-0 {
+  letter-spacing: 0% !important;
+}
 
 .rounded-48 {
   border-radius: 48px !important;
