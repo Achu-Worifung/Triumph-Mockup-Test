@@ -151,10 +151,10 @@
         alt="state"
         class="rounded-48 hero-img"
       />
-      <section class="hero-content d-flex flex-column gap-2 text-center">
-        <h1 class="hero-title">We're Glad You're Here</h1>
+      <section class="hero-content d-flex flex-column gap-2 text-center  container-sm">
+        <h1 class="hero-title fw-900 fs-80 lh-96 text-nowrap">We're Glad You're Here</h1>
 
-        <p class="hero-text">
+        <p class="hero-text fw-medium fs-36 mx-auto lh-48">
           We are a thriving and diverse community of real people experiencing
           real life together.
         </p>
@@ -183,7 +183,7 @@
           </p>
         </div>
 
-        <!-- hero icons  -->
+        <!-- social icons  -->
         <div
           class="d-none d-lg-flex align-items-center gap-3 text-white pr-24px position-absolute social-icons"
         >
@@ -197,39 +197,36 @@
     </div>
 
     <!-- Welcome to Rock Solid section -->
-   <section class="container mt-4 pt-5 appear">
-  <div class="row align-items-center gy-4">
+    <section class="container mt-4 pt-5 ">
+      <div class="row align-items-center gy-4">
+        <!-- Left -->
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <p class="welcome fw-bold fs-20 mb-0">WELCOME TO ROCK SOLID</p>
+          <h1 class="fw-bold fs-32 welcome-exposure">
+            Following the Holy Spirit, we exist to create a movement of
+            disciple-making disciples.
+          </h1>
+        </div>
 
-    <!-- Left -->
-    <div class="col-12 col-lg-6 text-center text-lg-start">
-      <p class="welcome fw-bold fs-20 mb-0">WELCOME TO ROCK SOLID</p>
-      <h1 class="fw-bold fs-32 welcome-exposure">
-        Following the Holy Spirit, we exist to create a movement of
-        disciple-making disciples.
-      </h1>
-    </div>
+        <!-- Right -->
+        <div class="col-12 col-lg-5 text-center text-lg-start">
+          <p class="m-0 fs-normal">
+            Rock Solid Church is committed to creating a movement of
+            disciple-making disciples—men and women who reflect the diversity of
+            our community, lived out in authentic unity.
+          </p>
+        </div>
+      </div>
 
-    <!-- Right -->
-    <div class="col-12 col-lg-5 text-center text-lg-start">
-      <p class="m-0 fs-normal">
-        Rock Solid Church is committed to creating a movement of
-        disciple-making disciples—men and women who reflect the diversity of
-        our community, lived out in authentic unity.
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Image -->
-  <div class="mt-4 text-center">
-    <img src="./public/Christ.png" alt="state" class="cross img-fluid" />
-  </div>
-</section>
-
+      <!-- Image -->
+      <div class="mt-4 text-center">
+        <img src="./public/Christ.png" alt="state" class="cross img-fluid" />
+      </div>
+    </section>
 
     <!-- Mission section  -->
     <section
-      class="container-fluid py-5 position-relative mission-section rounded-48"
+      class="container-fluid py-5 position-relative mission-section rounded-48 "
       style="margin-top: 150px"
     >
       <img src="./public/dip.svg" alt="dip" class="position-absolute dip" />
@@ -240,25 +237,25 @@
       />
       <img
         src="./public/wavybg.jpg"
-        class="position-absolute w-100 h-100 mission-bg"
+        class="position-absolute w-100 h-100 rounded-48 mission-bg"
       />
       <div class="mt-5">
         <!-- Header -->
         <div
-          class="mx-auto text-center d-flex flex-column gap-4 mission-header align-items-center"
+          class="mx-auto text-center d-flex flex-column gap-3 w-md-50 align-items-center"
         >
           <h1 class="fw-bold text-center text-light">Our Mission is Simple</h1>
-          <p class="text-center opacity-80 fw-normal w-75 text-light">
+          <p class="text-center opacity-80 fw-normal text-light">
             <strong>The gospel is the good news of Jesus:</strong> That Jesus
             lived a sinless life in my place, died the death that I deserved.
           </p>
         </div>
 
         <!-- Three Cards -->
-        <div class="row g-5 container my-3 mx-auto">
+        <div class="row g-2 g-lg-5 container-lg my-2 my-lg-3 mx-auto">
           <div class="col-lg-4 col-md-6">
             <div
-              class="card-hover text-center bg-white p-4 rounded-3 shadow-sm d-flex flex-column h-100"
+              class="card-hover text-center bg-white p-2 p-md-4 rounded-3 shadow-sm d-flex flex-column h-100"
             >
               <div class="icon-wrapper mx-auto mb-3">
                 <img src="./public/watch.svg" alt="Watch a Message Icon" />
@@ -274,7 +271,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div
-              class="card-hover text-center p-4 bg-white rounded-3 shadow-sm d-flex flex-column h-100"
+              class="card-hover text-center p-2 p-md-4 bg-white rounded-3 shadow-sm d-flex flex-column h-100"
             >
               <div class="icon-wrapper mx-auto mb-3">
                 <img src="./public/location.svg" alt="Find a Location Icon" />
@@ -290,7 +287,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div
-              class="card-hover text-center p-4 bg-white rounded-3 shadow-sm d-flex flex-column h-100"
+              class="card-hover text-center p-2 p-md-4 bg-white rounded-3 shadow-sm d-flex flex-column h-100"
             >
               <div class="icon-wrapper mx-auto mb-3">
                 <img src="./public/connected.svg" alt="Get Connected Icon" />
@@ -303,31 +300,32 @@
               <a href="#" class="card-link mt-auto">Contact Us</a>
             </div>
           </div>
+        </div>
 
-          <!-- Gospel Section -->
+        <!-- Gospel Section -->
 
-          <div
-            class="row gap-5 align-items-center justify-content-between mt-5 pt-5"
-          >
-            <!-- Left big text column -->
-            <div class="left-text col-6">
-              <p class="welcome fw-bold fs-20 mb-0">GOSPEL</p>
-              <h1 class="fw-bold fs-32 welcome-exposure text-light fs-32">
-                The gospel is what should characterize us. It should be our
-                identity: We are a gospel people.
-              </h1>
-            </div>
-
-            <!-- Right smaller paragraph column -->
-            <div class="text-right mt-auto col-5">
-              <p class="m-0 text-left fs-normal text-light">
-                <strong> The gospel is the good news of Jesus:</strong> That
-                Jesus lived a sinless life in my place, died the death that I
-                deserved, and rose to life again. And whoever believes in him
-                has eternal life.
-              </p>
-            </div>
+        <div
+          class="row align-items-center justify-content-between mt-5 pt-5 gy-2 gy-lg-4 container mx-auto"
+        >
+          <!-- Left big text column -->
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <p class="welcome fw-bold fs-20 mb-0 ">GOSPEL</p>
+            <h1 class="fw-bold fs-32 welcome-exposure text-light w-100 w-md-75">
+              The gospel is what should characterize us. It should be our
+              identity: We are a gospel people.
+            </h1>
           </div>
+
+          <!-- Right smaller paragraph column -->
+          <div class="col-12 col-lg-5 text-center text-lg-start">
+            <p class="m-0 fs-normal text-light">
+              <strong>The gospel is the good news of Jesus:</strong> That Jesus
+              lived a sinless life in my place, died the death that I deserved,
+              and rose to life again. And whoever believes in him has eternal
+              life.
+            </p>
+          </div>
+
           <!-- Disciples Image -->
           <div class="container mt-4 position-relative gospel-container">
             <img

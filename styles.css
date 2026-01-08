@@ -26,11 +26,15 @@ body {
   font-size:3rem
 }
 
+.fs-20 {
+  font-size: 1.25rem;
+}
+
 .fs-18 {
   font-size: 1.125rem;
 }
 .fs-28 {
-  font-size: 1.75rem;
+  font-size: clamp(18px, 3vw, 28px);
 }
 .fs-32 {
   font-size: 2rem;
@@ -46,6 +50,15 @@ body {
     font-size: 1.75rem;
   }
   
+}
+
+@media (max-width:992px) {
+ .fs-20{
+  font-size: 2rem;
+ }
+ .rounded-48 {
+  border-radius: 18px !important;
+ }
 }
 
 .radius-16 {

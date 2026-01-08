@@ -31,7 +31,7 @@ function initializeSwiper() {
       breakpoints: {
         // >= 0px
         0: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 10,
         },
         // >= 576px
