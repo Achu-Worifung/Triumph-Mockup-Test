@@ -10,20 +10,14 @@
 
 /* NAVBAR HEADER */
 .navbar-header {
-  position: relative;
-  display: flex;
-  align-items: center;
+
   padding: 2.5rem 4.5rem;
 }
 
 /* LOGO */
 .logo-section {
-  position: absolute;
   left: 73px;
   top: 47px;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
   width: 225.37px;
   height: 54.46px;
 }
