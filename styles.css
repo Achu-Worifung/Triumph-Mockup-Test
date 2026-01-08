@@ -6,7 +6,6 @@ body {
   color: white;
 }
 
-
 .gap-36 {
   gap: 36px !important;
 }
@@ -18,25 +17,22 @@ body {
 .rounded-48 {
   border-radius: 48px !important;
 }
-.span-flat 
-{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 100px;
-  height: 24px;
-  background-color: #333;
-  
+.fs-48px {
+  font-size:3rem
 }
 
-.span-height 
-{
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 10px;
-  height: 100px;
-  background-color: #333;
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.red-icons {
+  width: 20vw;
+  height: 17vh;
+  max-width: 115px;
+  max-height: 97px;
+  margin: 0 auto;
+
+  opacity: 1;
 }
 
 .story-section {
@@ -108,7 +104,6 @@ body {
     margin-bottom: 24px;
   }
 }
-
 
 .swiper {
   width: 100%;
@@ -300,5 +295,3 @@ footer {
     margin: 6px;
   }
 }
-
-

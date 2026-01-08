@@ -1,0 +1,14 @@
+.volunteer 
+{
+    color: #2E2320;
+    letter-spacing: 0px;
+    
+}
+
+.swiper-card 
+{
+    width: 240px;
+    height: 467px;
+    gap: 8px;
+    border-radius: 16px;
+}

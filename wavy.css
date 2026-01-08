@@ -117,3 +117,9 @@
     transform: translateX(-50%);
     background-color: none;
 }
+
+#pause-play {
+
+    z-index: 100;
+ 
+}

@@ -1,76 +1,115 @@
 //navigation menu toggle
-const menuIcon = document.querySelector('.menu-icon');
-const centerNav = document.querySelector('.center-nav');
+const menuIcon = document.querySelector(".menu-icon");
+const centerNav = document.querySelector(".center-nav");
 
-menuIcon.addEventListener('click', () => {
-    centerNav.classList.toggle('collapsed');
+menuIcon.addEventListener("click", () => {
+  centerNav.classList.toggle("collapsed");
 });
 
+let play = true;
+let swiper;
+
+function initializeSwiper() {
+  if (typeof Swiper !== "undefined") {
+    if (swiper) swiper.destroy(true, true); // Destroy existing instance
+    swiper = new Swiper(".mySwiper", {
+      loop: play,
+      autoplay: play
+        ? {
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }
+        : false,
+      slidesPerView: 7,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // Responsive breakpoints
+      breakpoints: {
+        // >= 0px
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // >= 576px
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        // >= 768px
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        // >= 992px
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 25,
+        },
+        // >= 1200px
+        1200: {
+          slidesPerView: 7,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
+}
 
 // Initialize Swiper to show multiple slides at once
-document.addEventListener('DOMContentLoaded', function () {
-	if (typeof Swiper !== 'undefined') {
-		var swiper = new Swiper('.mySwiper', {
-			slidesPerView: 7,
-			spaceBetween: 20,
-			loop: true,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			// Responsive breakpoints
-			breakpoints: {
-				// >= 0px
-				0: {
-					slidesPerView: 1,
-					spaceBetween: 12,
-				},
-				// >= 576px
-				576: {
-					slidesPerView: 2,
-					spaceBetween: 16,
-				},
-				// >= 992px
-				992: {
-					slidesPerView: 7,
-					spaceBetween: 20,
-				}
-			}
-		});
-	}
+document.addEventListener("DOMContentLoaded", initializeSwiper);
+
+document.getElementById("pause-play").addEventListener("click", function () {
+  play = !play;
+  console.log("Play state:", play);
+  if (play) {
+    this.innerHTML = '<i class="fa-solid fa-pause text-dark"></i>';
+  } else {
+    this.innerHTML = '<i class="fa-solid fa-play text-dark"></i>';
+  }
+  initializeSwiper(); 
 });
-
-
 
 function getNextSunday(date) {
-	const nextSunday = new Date(date);
-	nextSunday.setDate(date.getDate() + (7 - date.getDay()) % 7);
-	return nextSunday;
+  const nextSunday = new Date(date);
+  nextSunday.setDate(date.getDate() + ((7 - date.getDay()) % 7));
+  return nextSunday;
 }
 // next service countdown timer
-document.addEventListener('DOMContentLoaded', function () {
-	var nextServiceDate = getNextSunday(new Date());
-	var nextServiceDate = new Date(nextServiceDate.getFullYear(), nextServiceDate.getMonth(), nextServiceDate.getDate(), 10, 0, 0); // Next Sunday at 10:00 AM
+document.addEventListener("DOMContentLoaded", function () {
+  var nextServiceDate = getNextSunday(new Date());
+  var nextServiceDate = new Date(
+    nextServiceDate.getFullYear(),
+    nextServiceDate.getMonth(),
+    nextServiceDate.getDate(),
+    10,
+    0,
+    0
+  ); // Next Sunday at 10:00 AM
 
-	// Function to update the countdown timer
-	function updateCountdown() {
-		var now = new Date();
-		var distance = nextServiceDate - now;
+  // Function to update the countdown timer
+  function updateCountdown() {
+    var now = new Date();
+    var distance = nextServiceDate - now;
 
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		document.getElementById('days').textContent = days + "d";
-		document.getElementById('hours').textContent = hours + "h";
-		document.getElementById('minutes').textContent = minutes + "m";
-		document.getElementById('seconds').textContent = seconds + "s";
+    document.getElementById("days").textContent = days + "d";
+    document.getElementById("hours").textContent = hours + "h";
+    document.getElementById("minutes").textContent = minutes + "m";
+    document.getElementById("seconds").textContent = seconds + "s";
 
-		setTimeout(updateCountdown, 1000);
-	}
+    setTimeout(updateCountdown, 1000);
+  }
 
-	// Start the countdown timer
-	updateCountdown();
+  // Start the countdown timer
+  updateCountdown();
 });
-

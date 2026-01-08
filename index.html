@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="herosection.css" />
     <link rel="stylesheet" href="welcome.css" />
     <link rel="stylesheet" href="visit.css" />
+    <link rel="stylesheet" href="slider.css" />
     <script src="script.js" defer></script>
 
     <link
@@ -287,7 +288,7 @@
 
     <!-- love section  -->
     <section class="container-fluid text-center my-5 position-relative">
-      <span class="span-flat bg-dark positin-asbolute"> </span>
+      <span class="span-flat position-absolute"> </span>
       <div class="row">
         <div class="col-xs-12 my-5 py-5">
           <p class="h1">
@@ -300,25 +301,30 @@
               THE ENTIRE WORLD</span
             >
           </p>
-          <button
-            type="button"
-            class="btn  center-block btn-visit text-light "
-          >
+          <button type="button" class="btn center-block btn-visit text-light">
             Plan a Visit
           </button>
         </div>
       </div>
-      <span class="span-height bg-dark"> </span>
+      <span class="span-height bg-dark position-absolute "> </span>
     </section>
-    <img
-      src="./public//connected.svg"
-      alt="connected"
-      class="mx-auto"
-      style="width: 25px; height: 25px"
-    />
-    <section>
-      <p class="h1 text-center">Find a Place to Volunteer</p>
-      <p class="text-center">
+    <img src="./public//connected.svg" alt="connected" class="red-icons pb-4" />
+    <section class="position-relative">
+      <button
+        id="pause-play"
+        class="position-absolute bottom-0 end-0 my-0 me-5 rounded-circle"
+        style="width: 45px; height: 45px"
+      >
+    <i class="fa-solid fa-pause text-dark"></i>
+  </button>
+
+      <p class="h1 text-center fw-bold fs-48 volunteer">
+        Find a Place to Volunteer
+      </p>
+      <p
+        class="text-center fw-normal mb-5 fs-18"
+        style="line-height: 1.3; color: #001d3a"
+      >
         Explore our ministries—find your place, grow in faith,<br />
         and connect with a vibrant community!
       </p>
@@ -326,41 +332,65 @@
 
     <div class="swiper mySwiper container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/1st.png" alt="1st" />
-          <p>Worship</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">Worship</p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/2nd.png" alt="2nd" />
-          <p>Prayer & Care</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Prayer & Care
+          </p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/3rd.png" alt="3rd" />
-          <p>Kids</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">Kids</p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/4th.png" alt="4th" />
-          <p>Students</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Students
+          </p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/5th.png" alt="5th" />
-          <p>Worship</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">Worship</p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/6th.png" alt="6th" />
-          <p>Men</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">Men</p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/7th.png" alt="7th" />
-          <p>Women</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">Women</p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/8th.png" alt="8th" />
-          <p>Small group</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Small group
+          </p>
         </div>
-        <div class="swiper-slide">
+        <div
+          class="swiper-slide swiper-card d-flex flex-column align-items-start"
+        >
           <img src="./public/9th.png" alt="9th" />
-          <p>Worship</p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">Worship</p>
         </div>
       </div>
     </div>
