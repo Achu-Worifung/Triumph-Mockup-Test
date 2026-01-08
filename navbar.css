@@ -75,14 +75,7 @@
   gap: 0.5rem;
 }
 
-.indicator {
-  background-color: #ffffff33;
-  opacity: 20;
-  border-radius: 30px;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: 1;
-  pointer-events: none;
-}
+
 
 li {
   transition: color 0.3s ease;
@@ -94,10 +87,6 @@ li {
   position: relative;
 }
 
-.nav-indicator {
-  position: relative;
-  z-index: 2;
-}
 
 .nav-indicator a,
 .nav-indicator i {

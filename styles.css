@@ -230,36 +230,48 @@ body.nav-open {
   }
 }
 
-/* Hide non-active nav items when minimized */
-#navigation.minimized .nav-indicator:not(.active):not(.menu-icon):not(.remain) {
-  max-width: 40px;
+.indicator {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 8px;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#navigation.minimized .nav-indicator:not(.remain) {
+  max-width: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none; 
+}
+
+.nav-indicator {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.01s ease, max-width 0.01s ease, margin 0.01s ease;
+}
+
+#navigation.minimized {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  min-height: fit-content !important;
+  width: fit-content !important;
+}
+
+#navigation.minimized .nav-indicator:not(.remain) {
+  max-width: 0;
+  max-height: 0;
   opacity: 0;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  transition: max-width 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-    opacity 0.5s ease;
+  border: none;
 }
 
-
-
-.nav-indicator {
-  transition: opacity 0.4s ease,
-    max-width 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), margin 0.4s ease,
-    padding 0.4s ease;
-  opacity: 1;
-  max-width: 200px;
-  overflow: hidden;
-}
-
-.nav-indicator a {
-  white-space: nowrap;
-}
-
-#minimizer {
-  cursor: pointer;
-}
-
-#minimizer i {
-  transition: transform 0.3s ease;
+#navigation.minimized .nav-indicator.remain {
+  display: flex;
+  align-items: center;
+  align-content: center;
 }

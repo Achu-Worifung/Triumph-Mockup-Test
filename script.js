@@ -119,14 +119,17 @@ function setIndicatorPosition(item) {
   const itemRect = link.getBoundingClientRect();
   const navRect = nav.getBoundingClientRect();
 
-  indicator.style.width = `${itemRect.width + 15}px`;
-  indicator.style.height = `${itemRect.height + 5}px`;
-  indicator.style.left = `${itemRect.left - navRect.left}px`;
+  indicator.style.width = `${itemRect.width + 12}px`;
+  indicator.style.height = `${itemRect.height + 3}px`;
+  indicator.style.left = `${itemRect.left - navRect.left - .5}px`;
   indicator.style.top = `${itemRect.top - navRect.top + 4.5}px`;
 }
 
 if (activeItem) {
   setIndicatorPosition(activeItem);
+}else 
+{
+    indicator.style.opacity = `0`;
 }
 
 // Add hover listeners
@@ -150,10 +153,8 @@ window.addEventListener("resize", () => {
   }
 });
 
-// Optional: Handle clicks to change active state
 navItems.forEach((item) => {
   item.addEventListener("click", (e) => {
-    // Don't prevent default if you want links to work
     navItems.forEach((i) => i.classList.remove("active"));
     item.classList.add("active");
     setIndicatorPosition(item);
@@ -177,7 +178,7 @@ closeMobileNav.addEventListener("click", () => {
 
   setTimeout(() => {
     mobileNavOverlay.classList.add("d-none");
-  }, 300);
+  }, 100);
 });
 
 // Close on link click
@@ -188,88 +189,47 @@ document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
 
     setTimeout(() => {
       mobileNavOverlay.classList.add("d-none");
-    }, 300);
+    }, 100);
   });
 });
-//minimize nav
+
 //minimize nav
 document.getElementById("minimizer").addEventListener("click", function () {
   const nav = document.getElementById("navigation");
-  console.log("Minimizer clicked");
-  
   const icon = this.querySelector("i");
-  const indicators = document.querySelectorAll(".nav-indicator:not(.remain):not(.active)");
-  console.log("Indicators found:", indicators);
+  const indicators = document.querySelectorAll(".nav-indicator:not(.remain)");
+  const giveOnline = document.querySelector(".nav-indicator.remain");
 
-   const giveOnline = document.querySelectorAll(".nav-indicator.remain")[0];
-    giveOnline.classList.add("active");
-  
   if (!nav.classList.contains("minimized")) {
-    // Minimizing - fade out first, then hide
-    indicators.forEach((indicator) => {
-      indicator.style.opacity = "0";
-      indicator.style.maxWidth = "0";
-      indicator.style.margin = "0";
-      indicator.style.padding = "0";
-    });
+    // MINIMIZING
+    nav.classList.add("minimized");
+    icon.classList.replace("fa-bars", "fa-xmark");
 
-    // Remove active class from all nav-indicator elements
-    document.querySelectorAll(".nav-indicator").forEach((el) => el.classList.remove("active"));
-    // Add active only to Give Online
+    // Move indicator to 'Give Online' immediately
+    document.querySelectorAll(".nav-indicator").forEach(el => el.classList.remove("active"));
     giveOnline.classList.add("active");
-    
-
-    
-    // Wait for animation to complete before hiding
-    setTimeout(() => {
-      indicators.forEach((indicator) => {
-        indicator.classList.add("d-none");
-      });
-      nav.classList.add("minimized");
-      setIndicatorPosition(giveOnline);
-    }, 50); // Match this to your CSS transition duration
-
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-xmark");
+    setIndicatorPosition(giveOnline);
 
   } else {
-    // Expanding - show first, then fade in
     nav.classList.remove("minimized");
-    document.querySelectorAll(".indicator").forEach((indicator) => {
-      indicator.style.opacity = "1";
-    });
+    icon.classList.replace("fa-xmark", "fa-bars");
 
-    indicators.forEach((indicator) => {
-      indicator.classList.remove("d-none");
-      // Force reflow to ensure transition works
-      indicator.offsetHeight;
-      indicator.style.opacity = "1";
-      indicator.style.maxWidth = "200px";
-      indicator.style.margin = "";
-      indicator.style.padding = "";
-    });
 
-    icon.classList.remove("fa-xmark");
-    icon.classList.add("fa-bars");
+    const firstItem = document.querySelector(".nav-indicator:not(.remain)");
+    
+    document.querySelectorAll(".nav-indicator").forEach(el => el.classList.remove("active"));
+    giveOnline.classList.add("active"); 
 
-    // Remove d-none from all indicators in case some are stuck hidden
-    indicators.forEach((indicator) => indicator.classList.remove("d-none"));
-    giveOnline.classList.add("active");
-     // Wait for animation to complete before hiding
+
     setTimeout(() => {
-      indicators.forEach((indicator) => {
-        indicator.classList.remove("d-none");
-      });
-      nav.classList.remove("minimized");
       setIndicatorPosition(giveOnline);
-    }, 50); // Match this to your CSS transition duration
+    }, 450); 
+  }
+});
 
-    // Remove active from all nav indicators
-    document.querySelectorAll('.nav-indicator').forEach(el => el.classList.remove('active'));
-    // Add active to first nav item (excluding .remain)
-    const firstNav = document.querySelectorAll('#main-nav .nav-indicator:not(.remain)')[0];
-    if (firstNav) firstNav.classList.add('active');
-    setIndicatorPosition(firstNav);
-
+window.addEventListener("resize", () => {
+  const currentActive = document.querySelector(".nav-indicator.active");
+  if (currentActive) {
+    setIndicatorPosition(currentActive);
   }
 });
