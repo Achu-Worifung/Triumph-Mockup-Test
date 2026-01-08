@@ -123,11 +123,9 @@
                   >Give Online</a
                 >
               </li>
-               <li
-            class="menu-icon bg-light text-dark nav-indicator "
-          >
-            <i class="fa-solid fa-bars" style="font-size: 22px"></i>
-            </li>
+              <li class="menu-icon bg-light text-dark nav-indicator">
+                <i class="fa-solid fa-bars" style="font-size: 22px"></i>
+              </li>
             </ul>
             <span class="indicator"></span>
           </section>
@@ -140,7 +138,7 @@
 
           <!-- Right account -->
           <section
-          role="button"
+            role="button"
             class="account-section d-flex align-items-center justify-content-center d-none d-xl-flex c"
             id="account"
           >
@@ -150,6 +148,39 @@
         </div>
       </div>
     </nav>
+
+    <div class="mobile-nav-overlay d-none">
+      <span class="close-mobile-nav">&times;</span>
+        <section
+            class="position-absolute d-flex justify-content-start align-items-end gap-1 logo-section"
+          >
+            <img src="./public/logo.svg" alt="logo" />
+            <span class="logo-text">
+              <h1 class="fs-28 fw-900 lh-48 m-0">Rock Solid</h1>
+              <p class="fw-light m-0">CHRISTIAN CHURCH</p>
+            </span>
+          </section>
+      <ul class="mobile-nav-links list-unstyled text-center">
+        <li><a href="#">Plan A Visit</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Ministries</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Give Online</a></li>
+        
+      </ul>
+      <div
+          class=" d-flex align-items-center gap-3 text-white pr-24px  social-icons"
+        >
+          <i class="fa-brands fa-facebook-f fs-4"></i>
+          <i class="fa-brands fa-x-twitter fs-4"></i>
+
+          <i class="fa-brands fa-instagram fs-4"></i>
+          <i class="fa-brands fa-youtube fs-4"></i>
+        </div>
+       
+    </div>
 
     <!-- hero section  -->
     <div class="container-fluid mainstage mb-5 px-1 mx-auto">
@@ -231,7 +262,7 @@
 
       <!-- Image -->
       <div class="mt-4 text-center">
-        <img src="./public/Christ.png" alt="state" class="cross " />
+        <img src="./public/Christ.png" alt="state" class="cross" />
       </div>
     </section>
 
@@ -356,11 +387,12 @@
         <div class="col-xs-12 my-5 py-5">
           <p class="h1 fs-20">
             <span class="span-first fw-bolder text-center letter-0"
-              >ROCK SOLID CHURCH CONTINUES <br class="d-none d-md-block"/>TO HOLD OUT
+              >ROCK SOLID CHURCH CONTINUES <br class="d-none d-md-block" />TO
+              HOLD OUT
             </span>
             <span class="love fw-bolder text-center letter-0">LOVE</span>
             <span class="span-last fw-bolder text-center letter-0"
-              >AND HOPE TO <br class="d-none d-md-block"/>
+              >AND HOPE TO <br class="d-none d-md-block" />
               THE ENTIRE WORLD</span
             >
           </p>
@@ -378,7 +410,7 @@
         class="position-absolute bottom-0 end-0 my-0 me-5 rounded-circle social-icon"
         style="width: 45px; height: 45px"
       >
-        <i class="fa-solid fa-pause "></i>
+        <i class="fa-solid fa-pause"></i>
       </button>
 
       <p class="h1 text-center fw-bold fs-48 volunteer">
@@ -392,7 +424,7 @@
         and connect with a vibrant community!
       </p>
     </section>
-    
+
     <!-- swiper section  -->
     <div class="swiper mySwiper container-fluid px-4">
       <div class="swiper-wrapper">
@@ -542,73 +574,95 @@
     </section>
 
     <!-- footer section  -->
-  <footer class="container-fluid">
-  <div class="container-lg">
-    <div class="row d-flex justify-content-between mb-5 flex-column flex-lg-row">
-      <div class="col-lg-4 col-12 footer-left mb-4 mb-lg-0">
+    <footer class="container-fluid">
+      <div class="container-lg">
+        <div
+          class="row d-flex justify-content-between mb-5 flex-column flex-lg-row"
+        >
+          <div class="col-lg-4 col-12 footer-left mb-4 mb-lg-0">
+            <section
+              class="d-flex align-items-end justify-content-center justify-content-lg-start mb-4 gap-1 logo-size w-100"
+            >
+              <img src="./public/logo-black.svg" alt="logo" class="logo-icon" />
+              <span class="logo-text">
+                <h1 class="fs-28 fw-900 lh-48 m-0 text-start">Rock Solid</h1>
+                <p class="fw-light m-0">CHRISTIAN CHURCH</p>
+              </span>
+            </section>
 
-        <section class="d-flex align-items-end justify-content-center justify-content-lg-start mb-4 gap-1 logo-size w-100">
-          <img src="./public/logo-black.svg" alt="logo" class="logo-icon" />
-          <span class="logo-text">
-            <h1 class="fs-28 fw-900 lh-48 m-0 text-start">Rock Solid</h1>
-            <p class="fw-light m-0">CHRISTIAN CHURCH</p>
-          </span>
-        </section>
-
-        <div class="d-grid gap-3 text-center text-lg-start">
-          <p class="fs-18 line-height-24 fw-normal">
-            11340 W. Bell Road, Suite 200<br />Surprise, AZ 85378
-          </p>
-          <p class="fs-18 line-height-24 fw-normal">(000) 000-0000</p>
-        </div>
-        <div class="d-flex gap-2 gap-lg-3 justify-content-center justify-content-lg-start mt-3">
-          <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f fs-4"></i></a>
-          <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter fs-4"></i></a>
-          <a href="#" class="social-icon"><i class="fa-brands fa-instagram fs-4"></i></a>
-          <a href="#" class="social-icon"><i class="fa-brands fa-youtube fs-4"></i></a>
-        </div>
-      </div>
-
-      <div class="col-lg-8 col-12 footer-right d-flex flex-column justify-content-center align-items-center align-items-lg-end">
-        <div class="footer-buttons mb-3 text-center text-lg-end">
-          <button type="button" class="btn btn-dark btn-lg">PLAN A VISIT</button>
-          <button type="button" class="btn btn-outline btn-lg">Log In</button>
-        </div>
-
-        <div class="footer-links d-flex gap-4 justify-content-center justify-content-lg-end">
-          <div>
-            <h4>QUICK LINKS</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">About Rock Solid</a></li>
-              <li><a href="#">Locations</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Messages</a></li>
-              <li><a href="#">Ministries</a></li>
-              <li><a href="#">Serving</a></li>
-            </ul>
+            <div class="d-grid gap-3 text-center text-lg-start">
+              <p class="fs-18 line-height-24 fw-normal">
+                11340 W. Bell Road, Suite 200<br />Surprise, AZ 85378
+              </p>
+              <p class="fs-18 line-height-24 fw-normal">(000) 000-0000</p>
+            </div>
+            <div
+              class="d-flex gap-2 gap-lg-3 justify-content-center justify-content-lg-start mt-3"
+            >
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook-f fs-4"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-x-twitter fs-4"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-instagram fs-4"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-youtube fs-4"></i
+              ></a>
+            </div>
           </div>
-          <div>
-            <h4>GET IN TOUCH</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Plan a Visit Request</a></li>
-              <li><a href="#">Prayer</a></li>
-              <li><a href="#">Get Help</a></li>
-              <li><a href="#">Job Openings</a></li>
-              <li><a href="#">Report an Issue</a></li>
-            </ul>
+
+          <div
+            class="col-lg-8 col-12 footer-right d-flex flex-column justify-content-center align-items-center align-items-lg-end"
+          >
+            <div class="footer-buttons mb-3 text-center text-lg-end">
+              <button type="button" class="btn btn-dark btn-lg">
+                PLAN A VISIT
+              </button>
+              <button type="button" class="btn btn-outline btn-lg">
+                Log In
+              </button>
+            </div>
+
+            <div
+              class="footer-links d-flex gap-4 justify-content-center justify-content-lg-end"
+            >
+              <div>
+                <h4>QUICK LINKS</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Rock Solid</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Messages</a></li>
+                  <li><a href="#">Ministries</a></li>
+                  <li><a href="#">Serving</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>GET IN TOUCH</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Plan a Visit Request</a></li>
+                  <li><a href="#">Prayer</a></li>
+                  <li><a href="#">Get Help</a></li>
+                  <li><a href="#">Job Openings</a></li>
+                  <li><a href="#">Report an Issue</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row footer-bottom">
+          <div class="col-12 text-center text-lg-start">
+            <p>
+              &copy; 2025 | <a href="#">Terms of Service</a> |
+              <a href="#">Privacy Policy</a>
+            </p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row footer-bottom">
-      <div class="col-12 text-center text-lg-start">
-        <p>&copy; 2025 | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
+    </footer>
   </body>
 </html>

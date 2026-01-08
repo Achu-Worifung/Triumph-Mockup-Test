@@ -127,7 +127,6 @@ li {
     opacity: 0.9;
   }
 
-  /* The animated indicator */
 .center-nav .indicator {
   position: absolute;
   border-radius: 8px;
@@ -172,7 +171,6 @@ li {
   position: relative;
 }
 
-/* Fade-out effect for the account section */
 .fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -182,8 +180,64 @@ li {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Move the main navigation to the left */
 .move-left  {
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
+}
+
+
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #001d3a;
+  color: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-nav-overlay.d-none {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.mobile-nav-overlay.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mobile-nav-links li {
+  margin: 20px 0;
+}
+
+.mobile-nav-links li a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.mobile-nav-links li a:hover, .mobile-nav-overlay div i:hover {
+  color: #ff6b35;
+  cursor: pointer;
+}
+
+.close-mobile-nav {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  font-size: 70px;
+  cursor: pointer;
+}
+.close-mobile-nav:hover {
+  color: #ff6b35;
 }

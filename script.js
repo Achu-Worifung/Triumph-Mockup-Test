@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const navItems = nav.querySelectorAll('.nav-indicator');
   const activeItem = nav.querySelector('.nav-indicator.active');
 
-  // Set indicator position based on  element
 function setIndicatorPosition(item) {
   const link = item.querySelector('a') || item; 
   const itemRect = link.getBoundingClientRect();
@@ -135,7 +134,6 @@ function setIndicatorPosition(item) {
 }
 
 
-  // Initialize indicator on the active item
   if (activeItem) {
     setIndicatorPosition(activeItem);
   }
@@ -171,19 +169,29 @@ function setIndicatorPosition(item) {
     });
   });
 
-  // window.addEventListener('resize', (event) => 
-  // {
-  //   if (window.innerWidth < 1000) {
-  //     console.log("Window resized to: ", window.innerWidth);
-  //     //hid the sign in button 
 
-  //     document.getElementById("account").classList.add("fade-out");
+  // mobile nav toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu');
+const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+const closeMobileNav = document.querySelector('.close-mobile-nav');
 
-  //     //move menu to the right
-  //     document.getElementById("main-nav").classList.add("move-left");
-  //     document.getElementsByClassName("center-nav")[0].classList.add("d-none");
-  //     document.querySelector(".mobile-menu").classList.remove("d-none");
-  //   }
-  // })
+mobileMenuBtn.addEventListener('click', () => {
+  mobileNavOverlay.classList.add('active');
+  mobileNavOverlay.classList.remove('d-none');
+});
 
-  
+closeMobileNav.addEventListener('click', () => {
+  mobileNavOverlay.classList.remove('active');
+  setTimeout(() => {
+    mobileNavOverlay.classList.add('d-none');
+  }, 200);
+});
+
+document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNavOverlay.classList.remove('active');
+    setTimeout(() => {
+      mobileNavOverlay.classList.add('d-none');
+    }, 200);
+  });
+});
