@@ -27,29 +27,23 @@ function initializeSwiper() {
         el: ".swiper-pagination",
         clickable: true,
       },
-      // Responsive breakpoints
       breakpoints: {
-        // >= 0px
         0: {
           slidesPerView: 2,
           spaceBetween: 10,
         },
-        // >= 576px
         576: {
           slidesPerView: 3,
           spaceBetween: 15,
         },
-        // >= 768px
         768: {
           slidesPerView: 4,
           spaceBetween: 20,
         },
-        // >= 992px
         992: {
           slidesPerView: 5,
           spaceBetween: 25,
         },
-        // >= 1200px
         1200: {
           slidesPerView: 7,
           spaceBetween: 30,
@@ -88,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     10,
     0,
     0
-  ); // Next Sunday at 10:00 AM
+  ); 
 
   // Function to update the countdown timer
   function updateCountdown() {

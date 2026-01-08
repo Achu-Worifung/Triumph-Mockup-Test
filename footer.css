@@ -138,6 +138,19 @@ footer {
   text-decoration: underline;
 }
 
+
+.logo-size 
+{
+  width: 225px;
+  height: 54px;
+}
+.logo-icon 
+{
+  width: 64px;
+  height: 54px;
+}
+
+
 @media (max-width: 991px) {
   .footer-left {
     margin-bottom: 40px;
@@ -159,16 +172,3 @@ footer {
     margin: 6px;
   }
 }
-
-.logo-size 
-{
-  width: 225px;
-  height: 54px;
-}
-.logo-icon 
-{
-  width: 64px;
-  height: 54px;
-}
-
-

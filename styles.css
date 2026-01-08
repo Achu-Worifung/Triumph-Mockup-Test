@@ -61,18 +61,7 @@ body.nav-open {
 .fs-32 {
   font-size: 2rem;
 }
-@media (max-width:1400px) {
-  .fs-18 {
-    font-size: .98rem;
-  }
-  .fs-48 {
-    font-size: 2.5rem;
-  }
-  .fs-32 {
-    font-size: 1.75rem;
-  }
-  
-}
+
 .volunteer-section
 {
   display: flex;
@@ -119,19 +108,13 @@ body.nav-open {
 }
 
 
-/* Container fade + zoom animation */
 .fade-in-hero {
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   animation: heroFadeIn 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
 
-@keyframes heroFadeIn {
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
+
 
 .hero-content > * {
   opacity: 0;
@@ -157,6 +140,26 @@ body.nav-open {
 
 .hero-buttons button:nth-child(1) { animation-delay: 1.2s; }
 .hero-buttons button:nth-child(2) { animation-delay: 1.4s; }
+.appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.show-text 
+{
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.fadeUP 
+{
+  animation: fadeup both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
 
 @keyframes childFadeIn {
   to {
@@ -195,25 +198,6 @@ body.nav-open {
   }
 }
 
-.appear {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-}
-
-.show-text 
-{
-  animation: text-appear both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-}
-
-.fadeUP 
-{
-  animation: fadeup both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-}
 
 @keyframes text-appear {
   from {
@@ -237,4 +221,23 @@ body.nav-open {
     transform: translateY(0) scale(1);
   }
   
+}
+
+@media (max-width:1400px) {
+  .fs-18 {
+    font-size: .98rem;
+  }
+  .fs-48 {
+    font-size: 2.5rem;
+  }
+  .fs-32 {
+    font-size: 1.75rem;
+  }
+  
+}
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
