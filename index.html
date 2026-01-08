@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="welcome.css" />
     <link rel="stylesheet" href="visit.css" />
     <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="story.css" />
     <script src="script.js" defer></script>
 
     <link
@@ -306,17 +307,17 @@
           </button>
         </div>
       </div>
-      <span class="span-height bg-dark position-absolute "> </span>
+      <span class="span-height bg-dark position-absolute"> </span>
     </section>
-    <img src="./public//connected.svg" alt="connected" class="red-icons pb-4" />
+    <img src="./public/connected.svg" alt="connected" class="red-icons pb-4" />
     <section class="position-relative">
       <button
         id="pause-play"
         class="position-absolute bottom-0 end-0 my-0 me-5 rounded-circle"
         style="width: 45px; height: 45px"
       >
-    <i class="fa-solid fa-pause text-dark"></i>
-  </button>
+        <i class="fa-solid fa-pause text-dark"></i>
+      </button>
 
       <p class="h1 text-center fw-bold fs-48 volunteer">
         Find a Place to Volunteer
@@ -329,7 +330,7 @@
         and connect with a vibrant community!
       </p>
     </section>
-
+    <!-- swiper section  -->
     <div class="swiper mySwiper container">
       <div class="swiper-wrapper">
         <div
@@ -395,36 +396,55 @@
       </div>
     </div>
 
-    <section class="container-fluid story-section">
-      <div class="row align-items-center">
+    <!-- story section  -->
+    <section
+      class="container-fluid story-section d-flex justify-content-center py-5"
+    >
+      <div class="container-md row my-4">
+        <!-- left text  -->
         <div class="col-md-5 col-sm-12 story-text">
-          <h2>Saved Lives Are<br />Changed Lives.</h2>
-          <p>
-            Feature stories about how Rock Solid Church is making a difference
+          <h2 class="text-light fw-bolder fs-48 text-start">
+            Saved Lives Are<br />Changed Lives.
+          </h2>
+          <p class="fw-normal fs-18" style="line-height: 28px">
+            Feature stories about how Rock Solid<br />
+            Church is making a difference<br />
             in our city.
           </p>
-          <button type="button" class="btn btn-warning btn-lg">
+          <button
+            type="button"
+            class="share-story-btn text-light text-center fw-bold fs-18"
+          >
             Share Your Story
           </button>
         </div>
+
+        <!-- right images  -->
         <div class="col-md-7 col-sm-12">
-          <div class="row no-gutter story-grid">
-            <div class="col-sm-8 col-xs-12">
-              <div class="story-tile story-large">
+          <div class="row no-gutter  h-100 d-flex">
+            <div class="col-sm-8 col-xs-12 d-flex flex-column h-100">
+              <div class="story-tile story-large flex-grow-1">
                 <img
                   src="./public/road to peace.png"
                   alt="Joshua's Road to Peace"
-                  class="img-fluid"
+                  class="img-fluid w-100 h-100 radius-16"
+                  style="object-fit: cover; transform: scaleX(-1);"
                 />
-                <p class="story-caption">Joshua's Road to Peace</p>
               </div>
+              <p
+                class="story- fw-bold fs-20 mt-2"
+                style="line-height: 100%; text-decoration: underline"
+              >
+                Joshua's Road to Peace
+              </p>
             </div>
+
             <div class="col-sm-4 col-xs-12">
               <div class="story-tile">
                 <img
                   src="./public/any means.png"
                   alt="By Any Means Necessary"
-                  class="img-fluid"
+                  class="img-fluid radius-16"
                 />
                 <p class="story-caption">By Any Means Necessary</p>
               </div>
@@ -432,7 +452,7 @@
                 <img
                   src="./public/hope.png"
                   alt="Holding on to Hope"
-                  class="img-fluid"
+                  class="img-fluid radius-16"
                 />
                 <p class="story-caption">Holding on to Hope</p>
               </div>

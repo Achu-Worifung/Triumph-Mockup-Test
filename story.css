@@ -1,0 +1,22 @@
+
+
+.share-story-btn 
+{
+    background-color: #EB3300;
+    padding:12px 16px;
+    border-radius: 8px;
+    margin: 0;
+    line-height: 28xp;
+
+
+
+}
+
+.story-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: #2f2520;
+  color: #fff;
+  border-radius: 28px;
+  padding: 40px;
+}
