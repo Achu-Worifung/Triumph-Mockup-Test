@@ -48,9 +48,13 @@
   <body>
     <nav class="main-nav">
       <div class="container-fluid">
-        <div class="position-relative d-flex align-items-center justify-content-between navbar-header">
+        <div
+          class="position-relative d-flex align-items-center justify-content-between navbar-header"
+        >
           <!-- Logo -->
-          <section class="position-absolute d-flex align-items-center gap-1 logo-section">
+          <section
+            class="position-absolute d-flex align-items-center gap-1 logo-section"
+          >
             <img src="./public/logo.svg" alt="logo" />
             <span class="logo-text">
               <h1>Rock Solid</h1>
@@ -58,10 +62,13 @@
             </span>
           </section>
 
-          <!-- Centered navigation -->
-          <section class="mx-auto d-flex justify-content-center gap-5 p-2 center-nav">
+          <!-- Navigation -->
+          <section
+            class="mx-auto d-flex justify-content-center gap-5 p-2 center-nav position-relative"
+          >
             <ul
               class="d-flex gap-4 align-items-center list-unstyled justify-content-center mx-auto d-flex gap-4 align-items-center m-0 pe-0"
+              id="main-nav"
             >
               <li class="nav-indicator">
                 <a href="#" class="text-white text-decoration-none"
@@ -87,7 +94,7 @@
               <li class="nav-indicator">
                 <a href="#" class="text-white text-decoration-none">Media</a>
               </li>
-              <li class="default-item">
+              <li class="nav-indicator active">
                 <a href="#" class="text-white text-decoration-none"
                   >Give Online</a
                 >
@@ -96,6 +103,7 @@
                 <i class="fa-solid fa-bars" style="font-size: 22px"></i>
               </li>
             </ul>
+            <span class="indicator"></span>
           </section>
 
           <!-- Right account -->

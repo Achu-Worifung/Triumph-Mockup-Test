@@ -113,3 +113,60 @@ document.addEventListener("DOMContentLoaded", function () {
   // Start the countdown timer
   updateCountdown();
 });
+
+
+
+// nav bar animations
+  const nav = document.getElementById('main-nav');
+  const indicator = document.querySelector('.center-nav .indicator');
+  const navItems = nav.querySelectorAll('.nav-indicator');
+  const activeItem = nav.querySelector('.nav-indicator.active');
+
+  // Set indicator position based on  element
+function setIndicatorPosition(item) {
+  const link = item.querySelector('a') || item; 
+  const itemRect = link.getBoundingClientRect();
+  const navRect = nav.getBoundingClientRect();
+
+  indicator.style.width = `${itemRect.width + 15}px`;
+  indicator.style.height = `${itemRect.height + 5}px`;
+  indicator.style.left = `${itemRect.left - navRect.left}px`;
+  indicator.style.top = `${itemRect.top - navRect.top + 4.5}px`; 
+}
+
+
+  // Initialize indicator on the active item
+  if (activeItem) {
+    setIndicatorPosition(activeItem);
+  }
+
+  // Add hover listeners
+  navItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      setIndicatorPosition(item);
+    });
+  });
+
+  // Return to active item when not hovering
+  nav.addEventListener('mouseleave', () => {
+    if (activeItem) {
+      setIndicatorPosition(activeItem);
+    }
+  });
+
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    if (activeItem) {
+      setIndicatorPosition(activeItem);
+    }
+  });
+
+  // Optional: Handle clicks to change active state
+  navItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      // Don't prevent default if you want links to work
+      navItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+      setIndicatorPosition(item);
+    });
+  });
