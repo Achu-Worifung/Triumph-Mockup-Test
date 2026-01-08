@@ -11,7 +11,7 @@ let swiper;
 
 function initializeSwiper() {
   if (typeof Swiper !== "undefined") {
-    if (swiper) swiper.destroy(true, true); // Destroy existing instance
+    if (swiper) swiper.destroy(true, true); 
     swiper = new Swiper(".mySwiper", {
       loop: play,
       autoplay: play

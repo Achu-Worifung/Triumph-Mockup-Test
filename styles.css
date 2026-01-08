@@ -1,9 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-    font-family: 'Inter', sans-serif;
+
+
+  font-family: 'Inter', sans-serif !important;
   color: white;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -206,6 +208,13 @@ body.nav-open {
   animation-range: entry 0% cover 30%;
 }
 
+.fadeUP 
+{
+  animation: fadeup both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
 @keyframes text-appear {
   from {
     opacity: 0;
@@ -218,4 +227,14 @@ body.nav-open {
   
 }
 
-/* Footer Styling */
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
+}
