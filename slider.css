@@ -52,3 +52,23 @@
   filter: grayscale(100%) contrast(1.1);
   transform: scale(1.1);
 }
+.swiper-card i {
+    transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1) !important;
+}
+.swiper-card:hover i {
+    opacity: 1 !important;
+    color: #ED4B1E !important;
+    animation: move-backward 1s ease-in-out infinite;
+}
+
+@keyframes move-backward {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
