@@ -30,6 +30,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
+    <!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+
     <!-- swiper link -->
     <link
       rel="stylesheet"
@@ -421,14 +428,14 @@
 
         <!-- right images  -->
         <div class="col-md-7 col-sm-12">
-          <div class="row no-gutter  h-100 d-flex">
+          <div class="row no-gutter h-100 d-flex">
             <div class="col-sm-8 col-xs-12 d-flex flex-column h-100">
               <div class="story-tile story-large flex-grow-1">
                 <img
                   src="./public/road to peace.png"
                   alt="Joshua's Road to Peace"
                   class="img-fluid w-100 h-100 radius-16"
-                  style="object-fit: cover; transform: scaleX(-1);"
+                  style="object-fit: cover; transform: scaleX(-1)"
                 />
               </div>
               <p
@@ -461,40 +468,48 @@
         </div>
       </div>
     </section>
+
+    <!-- footer section  -->
     <footer class="container-fluid">
-      <div class="container">
-        <div class="row footer-main">
+      <div class="container-lg">
+        <div class="row footer-main d-flex justify-content-between">
           <!-- Left Column: Logo, Address, Phone, Social -->
           <div class="col-md-4 col-sm-12 footer-left">
-            <div class="">
-              <img src="./public/logo-black.svg" alt="logo" />
-              <span>
-                <h3>ROCK SOLID</h3>
+            <!-- Logo -->
+            <section class="d-flex align-items-center mb-4 gap-1 logo-size">
+              <img src="./public/logo-black.svg" alt="logo" class="logo-icon" />
+              <span class="logo-text">
+                <h1 class="">Rock Solid</h1>
                 <p>CHRISTIAN CHURCH</p>
               </span>
-            </div>
-            <div class="footer-contact">
-              <p>11340 W. Bell Road, Suite 200<br />Surprise, AZ 85378</p>
-              <p>(000) 000-0000</p>
+            </section>
+            <div class="d-grid gap-3">
+              <p class="fs-18 line-height-24 fw-normal">
+                11340 W. Bell Road, Suite 200<br />Surprise, AZ 85378
+              </p>
+              <p class="fs-18 line-height-24 fw-normal">(000) 000-0000</p>
             </div>
             <div class="footer-social">
               <a href="#" class="social-icon"
-                ><i class="fa-brands fa-facebook-f"></i
+                ><i class="fa-brands fa-facebook-f fs-4"></i
               ></a>
               <a href="#" class="social-icon"
-                ><i class="fa-brands fa-x-twitter"></i
+                >
+                 <i class="fa-brands fa-x-twitter fs-4"></i>
+              </a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-instagram fs-4"></i
               ></a>
               <a href="#" class="social-icon"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="#" class="social-icon"
-                ><i class="fa-brands fa-youtube"></i
+                ><i class="fa-brands fa-youtube fs-4"></i
               ></a>
             </div>
           </div>
 
           <!-- Right Column: Buttons and Links -->
-          <div class="col-md-8 col-sm-12 footer-right">
+          <div
+            class="col-md-8 col-sm-12 footer-right d-flex flex-column justify-content-end align-items-end"
+          >
             <!-- Top Buttons -->
             <div class="footer-buttons text-right">
               <button type="button" class="btn btn-dark btn-lg">
@@ -506,8 +521,8 @@
             </div>
 
             <!-- Link Columns -->
-            <div class="row footer-links">
-              <div class="col-sm-6">
+            <div class=" footer-links d-flex gap-4">
+              <div class="">
                 <h4>QUICK LINKS</h4>
                 <ul class="list-unstyled">
                   <li><a href="#">About Rock Solid</a></li>
@@ -518,7 +533,7 @@
                   <li><a href="#">Serving</a></li>
                 </ul>
               </div>
-              <div class="col-sm-6">
+              <div class="">
                 <h4>GET IN TOUCH</h4>
                 <ul class="list-unstyled">
                   <li><a href="#">Plan a Visit Request</a></li>
