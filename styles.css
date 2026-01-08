@@ -4,6 +4,8 @@ body {
   padding: 0;
     font-family: 'Inter', sans-serif;
   color: white;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .gap-36 {
@@ -123,22 +125,7 @@ body {
   }
 }
 
-/* Hover effect for navbar items */
-.center-nav ul li:not(.menu-icon) {
-  position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
 
-.center-nav ul li:not(.menu-icon):hover {
-  color: #ff6b35; /* Highlight color */
-  transform: scale(1.1); /* Slight zoom effect */
-}
-
-/* Indicator hover effect */
-.indicator {
-  background-color: #ff6b35; /* Match hover color */
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
 
 
 
@@ -338,4 +325,5 @@ footer {
   width: 64px;
   height: 54px;
 }
+
 

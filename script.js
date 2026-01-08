@@ -170,3 +170,18 @@ function setIndicatorPosition(item) {
       setIndicatorPosition(item);
     });
   });
+
+  // window.addEventListener('resize', (event) => 
+  // {
+  //   if (window.innerWidth < 1000) {
+  //     console.log("Window resized to: ", window.innerWidth);
+  //     //hid the sign in button 
+
+  //     document.getElementById("account").classList.add("fade-out");
+
+  //     //move menu to the right
+  //     document.getElementById("main-nav").classList.add("move-left");
+  //     document.getElementsByClassName("center-nav")[0].classList.add("d-none");
+  //     document.querySelector(".mobile-menu").classList.remove("d-none");
+  //   }
+  // })

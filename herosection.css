@@ -53,3 +53,25 @@
     font-size: 22px;       
 }
 
+
+@media (max-width: 991.98px) {
+  .mainstage {
+    height: 100vh;
+  }
+
+  .hero-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: white;
+  }
+}

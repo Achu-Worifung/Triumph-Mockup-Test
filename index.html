@@ -25,10 +25,7 @@
     />
 
     <!-- Inter font link -->
-     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-    
-
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
     <!-- Font Awesome CDN -->
     <link
@@ -70,7 +67,7 @@
 
           <!-- Navigation -->
           <section
-            class="mx-auto d-flex justify-content-center gap-1 p-2 center-nav position-relative"
+            class="mx-auto justify-content-center gap-1 p-2 center-nav position-relative d-none d-lg-flex"
           >
             <ul
               class="d-flex align-items-center list-unstyled justify-content-center mx-auto d-flex gap-2 align-items-center m-0 pe-0"
@@ -125,16 +122,20 @@
                   >Give Online</a
                 >
               </li>
-              <li class="menu-icon bg-light text-dark nav-indicator">
-                <i class="fa-solid fa-bars" style="font-size: 22px"></i>
-              </li>
             </ul>
             <span class="indicator"></span>
           </section>
 
+          <span
+            class="menu-icon bg-light text-dark nav-indicator d-flex d-lg-none mobile-menu position-absolute end-0 me-3"
+          >
+            <i class="fa-solid fa-bars" style="font-size: 22px"></i>
+          </span>
+
           <!-- Right account -->
           <section
-            class="account-section d-flex align-items-center justify-content-center"
+            class="account-section d-flex align-items-center justify-content-center d-none d-lg-flex"
+            id="account"
           >
             <i class="fa-regular fa-user"></i>
             <p class="m-0 fw-normal">Create Account</p>
@@ -144,8 +145,8 @@
     </nav>
 
     <!-- hero section  -->
-    <div class="container-fluid mainstage mb-5 fade-in px-2 pt-2 ">
-      <img src="./public/mainstage.jpg" alt="state" class="rounded-48"/>
+    <div class="container-fluid mainstage mb-5  p-2">
+      <img src="./public/mainstage.jpg" alt="state" class="rounded-48 hero-img" />
       <section class="hero-content d-flex flex-column gap-2 text-center">
         <h1 class="hero-title">We're Glad You're Here</h1>
 
@@ -169,7 +170,7 @@
       <section
         class="container-fluid d-flex justify-content-between align-items-center p-0"
       >
-        <div class="countdown text-center ">
+        <div class="countdown text-center">
           <p class="countdown-label fw-normal fs-28">Next Service Starts in:</p>
           <p class="countdown-time fw-bold fs-28">
             <span id="days">00</span>: <span id="hours">00</span>:
@@ -180,7 +181,7 @@
 
         <!-- hero icons  -->
         <div
-          class="d-flex align-items-center gap-3 text-white pr-24px position-absolute social-icons"
+          class="d-none d-lg-flex align-items-center gap-3 text-white pr-24px position-absolute social-icons"
         >
           <i class="fa-brands fa-facebook-f fs-4"></i>
           <i class="fa-brands fa-x-twitter fs-4"></i>
@@ -221,7 +222,8 @@
 
     <!-- Mission section  -->
     <section
-      class="container-fluid py-5 position-relative mission-section  rounded-48" style="margin-top: 150px;"
+      class="container-fluid py-5 position-relative mission-section rounded-48"
+      style="margin-top: 150px"
     >
       <img src="./public/dip.svg" alt="dip" class="position-absolute dip" />
       <img
@@ -381,7 +383,9 @@
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
         >
           <img src="./public/1st.png" alt="1st" />
-          <p class="text-start fw-bold fs-18" style="color: #001d3a">Worship <i class="fa-solid fa-angle-right opacity-0"></i></p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Worship <i class="fa-solid fa-angle-right opacity-0"></i>
+          </p>
         </div>
         <div
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
@@ -390,13 +394,14 @@
           <p class="text-start fw-bold fs-18" style="color: #001d3a">
             Prayer & Care <i class="fa-solid fa-angle-right opacity-0"></i>
           </p>
-          
         </div>
         <div
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
         >
           <img src="./public/3rd.png" alt="3rd" />
-          <p class="text-start fw-bold fs-18" style="color: #001d3a">Kids <i class="fa-solid fa-angle-right opacity-0"></i></p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Kids <i class="fa-solid fa-angle-right opacity-0"></i>
+          </p>
         </div>
         <div
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
@@ -410,19 +415,25 @@
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
         >
           <img src="./public/5th.png" alt="5th" />
-          <p class="text-start fw-bold fs-18" style="color: #001d3a">Worship <i class="fa-solid fa-angle-right opacity-0"></i></p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Worship <i class="fa-solid fa-angle-right opacity-0"></i>
+          </p>
         </div>
         <div
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
         >
           <img src="./public/6th.png" alt="6th" />
-          <p class="text-start fw-bold fs-18" style="color: #001d3a">Men <i class="fa-solid fa-angle-right opacity-0"></i></p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Men <i class="fa-solid fa-angle-right opacity-0"></i>
+          </p>
         </div>
         <div
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
         >
           <img src="./public/7th.png" alt="7th" />
-          <p class="text-start fw-bold fs-18" style="color: #001d3a">Women <i class="fa-solid fa-angle-right opacity-0"></i></p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Women <i class="fa-solid fa-angle-right opacity-0"></i>
+          </p>
         </div>
         <div
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
@@ -436,7 +447,9 @@
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
         >
           <img src="./public/9th.png" alt="9th" />
-          <p class="text-start fw-bold fs-18" style="color: #001d3a">Worship <i class="fa-solid fa-angle-right opacity-0"></i></p>
+          <p class="text-start fw-bold fs-18" style="color: #001d3a">
+            Worship <i class="fa-solid fa-angle-right opacity-0"></i>
+          </p>
         </div>
       </div>
     </div>

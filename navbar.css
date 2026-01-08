@@ -21,6 +21,12 @@
   height: 54.46px;
 }
 
+.mobile-menu
+{
+  right: 40px;
+  top: 47px;
+}
+
 .logo-section img {
   width: 64.37px;
   height: 54.46px;
@@ -189,4 +195,20 @@ li {
 
 .nav-links {
   position: relative;
+}
+
+/* Fade-out effect for the account section */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Move the main navigation to the left */
+.move-left  {
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 }
