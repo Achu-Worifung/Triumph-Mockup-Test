@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 
-
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   color: white;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -18,9 +17,8 @@ body.nav-open {
 .fw-900 {
   font-weight: 900 !important;
 }
-.fs-80 
-{
-    font-size: clamp(25px, 5vw, 80px);
+.fs-80 {
+  font-size: clamp(25px, 5vw, 80px);
 }
 
 .lh-96 {
@@ -45,11 +43,11 @@ body.nav-open {
   border-radius: 48px !important;
 }
 .fs-48 {
-  font-size:3rem
+  font-size: 3rem;
 }
 
 .fs-20 {
-  font-size:clamp(18px, 4vw, 20px);
+  font-size: clamp(18px, 4vw, 20px);
 }
 
 .fs-18 {
@@ -62,31 +60,25 @@ body.nav-open {
   font-size: 2rem;
 }
 
-.volunteer-section
-{
+.volunteer-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#pause-play
-{
+#pause-play {
   cursor: pointer;
   width: 55px;
   height: 55px;
 }
-#pause-play:hover
-{
-  background-color: #EB3300;
+#pause-play:hover {
+  background-color: #eb3300;
   border-radius: 10px;
 }
-@media (max-width:992px) {
-
- .rounded-48 {
-  border-radius: 18px !important;
- }
-
-
+@media (max-width: 992px) {
+  .rounded-48 {
+    border-radius: 18px !important;
+  }
 }
 
 .radius-16 {
@@ -107,14 +99,11 @@ body.nav-open {
   opacity: 1;
 }
 
-
 .fade-in-hero {
   opacity: 0;
   transform: scale(0.95) translateY(40px);
   animation: heroFadeIn 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
-
-
 
 .hero-content > * {
   opacity: 0;
@@ -122,9 +111,15 @@ body.nav-open {
   animation: childFadeIn 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
 
-.hero-content > *:nth-child(1) { animation-delay: 0.3s; }
-.hero-content > *:nth-child(2) { animation-delay: 0.6s; }
-.hero-content > *:nth-child(3) { animation-delay: 0.9s; }
+.hero-content > *:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.hero-content > *:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.hero-content > *:nth-child(3) {
+  animation-delay: 0.9s;
+}
 
 .hero-buttons {
   opacity: 1 !important;
@@ -138,28 +133,29 @@ body.nav-open {
   animation: buttonPop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
-.hero-buttons button:nth-child(1) { animation-delay: 1.2s; }
-.hero-buttons button:nth-child(2) { animation-delay: 1.4s; }
+.hero-buttons button:nth-child(1) {
+  animation-delay: 1.2s;
+}
+.hero-buttons button:nth-child(2) {
+  animation-delay: 1.4s;
+}
 .appear {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
 
-.show-text 
-{
+.show-text {
   animation: text-appear both;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
 
-.fadeUP 
-{
+.fadeUP {
   animation: fadeup both;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
-
 
 @keyframes childFadeIn {
   to {
@@ -183,10 +179,6 @@ body.nav-open {
   }
 }
 
-
-
-
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -198,7 +190,6 @@ body.nav-open {
   }
 }
 
-
 @keyframes text-appear {
   from {
     opacity: 0;
@@ -208,24 +199,22 @@ body.nav-open {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
 
 @keyframes fadeup {
   from {
     opacity: 0;
-    transform: translateY(20px) scale(.5);
+    transform: translateY(20px) scale(0.5);
   }
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-  
 }
 
-@media (max-width:1400px) {
+@media (max-width: 1400px) {
   .fs-18 {
-    font-size: .98rem;
+    font-size: 0.98rem;
   }
   .fs-48 {
     font-size: 2.5rem;
@@ -233,11 +222,44 @@ body.nav-open {
   .fs-32 {
     font-size: 1.75rem;
   }
-  
 }
 @keyframes heroFadeIn {
   to {
     opacity: 1;
     transform: scale(1) translateY(0);
   }
+}
+
+/* Hide non-active nav items when minimized */
+#navigation.minimized .nav-indicator:not(.active):not(.menu-icon):not(.remain) {
+  max-width: 40px;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-width 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.5s ease;
+}
+
+
+
+.nav-indicator {
+  transition: opacity 0.4s ease,
+    max-width 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), margin 0.4s ease,
+    padding 0.4s ease;
+  opacity: 1;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+.nav-indicator a {
+  white-space: nowrap;
+}
+
+#minimizer {
+  cursor: pointer;
+}
+
+#minimizer i {
+  transition: transform 0.3s ease;
 }
