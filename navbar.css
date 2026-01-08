@@ -28,26 +28,20 @@
 }
 
 .logo-section img {
-  width: 64.37px;
-  height: 54.46px;
-}
-
-.logo-text {
-  width: 149px;
+  width: 64px;
   height: 54px;
 }
 
+
+
 .logo-text h1 {
-  font-size: 1.25rem;
-  font-weight: 900;
+  font-size: clamp(18px, 2vw,  1.25rem);
   line-height: 34px;
   margin: 0;
 }
 
 .logo-text p {
-  font-weight: 300;
-  line-height: 18px;
-  margin: 0;
+  line-height: 14px;
 }
 
 .center-nav {

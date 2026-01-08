@@ -1,23 +1,6 @@
 
 
-.fw-900 {
-  font-weight: 900 !important;
-}
-.fs-80 
-{
-    font-size: clamp(25px, 5vw, 80px);
-}
 
-.lh-96 {
-  line-height: 96px !important;
-}
-
-.fs-36 {
-  font-size: clamp(14px, 4vw, 36px);
-}
-.lh-48 {
-  line-height: 48px !important;
-}
 .hero-img {
   width: 100%;
   height: auto;

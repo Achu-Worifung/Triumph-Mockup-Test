@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="visit.css" />
     <link rel="stylesheet" href="slider.css" />
     <link rel="stylesheet" href="story.css" />
+    <link rel="stylesheet" href="footer.css" />
     <script src="script.js" defer></script>
 
     <link
@@ -60,8 +61,8 @@
           >
             <img src="./public/logo.svg" alt="logo" />
             <span class="logo-text">
-              <h1>Rock Solid</h1>
-              <p>CHRISTIAN CHURCH</p>
+              <h1 class="fs-28 fw-900 lh-48 m-0">Rock Solid</h1>
+              <p class="fw-light m-0">CHRISTIAN CHURCH</p>
             </span>
           </section>
 
@@ -151,8 +152,12 @@
         alt="state"
         class="rounded-48 hero-img"
       />
-      <section class="hero-content d-flex flex-column gap-2 text-center  container-sm">
-        <h1 class="hero-title fw-900 fs-80 lh-96 text-nowrap">We're Glad You're Here</h1>
+      <section
+        class="hero-content d-flex flex-column gap-2 text-center container-sm"
+      >
+        <h1 class="hero-title fw-900 fs-80 lh-96 text-nowrap">
+          We're Glad You're Here
+        </h1>
 
         <p class="hero-text fw-medium fs-36 mx-auto lh-48">
           We are a thriving and diverse community of real people experiencing
@@ -197,7 +202,7 @@
     </div>
 
     <!-- Welcome to Rock Solid section -->
-    <section class="container mt-4 pt-5 ">
+    <section class="container mt-4 pt-5">
       <div class="row align-items-center gy-4">
         <!-- Left -->
         <div class="col-12 col-lg-6 text-center text-lg-start">
@@ -226,7 +231,7 @@
 
     <!-- Mission section  -->
     <section
-      class="container-fluid py-5 position-relative mission-section rounded-48 "
+      class="container-fluid py-5 position-relative mission-section rounded-48"
       style="margin-top: 150px"
     >
       <img src="./public/dip.svg" alt="dip" class="position-absolute dip" />
@@ -309,7 +314,7 @@
         >
           <!-- Left big text column -->
           <div class="col-12 col-lg-6 text-center text-lg-start">
-            <p class="welcome fw-bold fs-20 mb-0 ">GOSPEL</p>
+            <p class="welcome fw-bold fs-20 mb-0">GOSPEL</p>
             <h1 class="fw-bold fs-32 welcome-exposure text-light w-100 w-md-75">
               The gospel is what should characterize us. It should be our
               identity: We are a gospel people.
@@ -364,10 +369,10 @@
     <section class="position-relative">
       <button
         id="pause-play"
-        class="position-absolute bottom-0 end-0 my-0 me-5 rounded-circle"
+        class="position-absolute bottom-0 end-0 my-0 me-5 rounded-circle social-icon"
         style="width: 45px; height: 45px"
       >
-        <i class="fa-solid fa-pause text-dark"></i>
+        <i class="fa-solid fa-pause "></i>
       </button>
 
       <p class="h1 text-center fw-bold fs-48 volunteer">
@@ -464,60 +469,66 @@
       class="container-fluid story-section d-flex justify-content-center py-5"
     >
       <div class="container-md row my-4">
-        <!-- left text  -->
-        <div class="col-md-5 col-sm-12 story-text">
-          <h2 class="text-light fw-bolder fs-48 text-start">
-            Saved Lives Are<br />Changed Lives.
+        <!-- left text -->
+        <div
+          class="col-lg-5 col-12 story-text mb-4 mb-lg-0 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"
+        >
+          <h2 class="text-light fw-bolder fs-3 fs-md-2">
+            Saved Lives Are<br class="d-none d-lg-block" />Changed Lives.
           </h2>
-          <p class="fw-normal fs-18" style="line-height: 28px">
-            Feature stories about how Rock Solid<br />
-            Church is making a difference<br />
+          <p class="fw-normal fs-6 fs-md-5" style="line-height: 1.6">
+            Feature stories about how Rock Solid<br class="d-none d-lg-block" />
+            Church is making a difference<br class="d-none d-lg-block" />
             in our city.
           </p>
           <button
             type="button"
-            class="share-story-btn text-light text-center fw-bold fs-18"
+            class="share-story-btn text-light fw-bold fs-6 fs-md-5 mt-3"
           >
             Share Your Story
           </button>
         </div>
 
-        <!-- right images  -->
-        <div class="col-md-7 col-sm-12">
-          <div class="row no-gutter h-100 d-flex">
-            <div class="col-sm-8 col-xs-12 d-flex flex-column h-100">
-              <div class="story-tile story-large flex-grow-1">
+        <!-- right images -->
+        <div class="col-lg-7 col-12">
+          <div class="row g-2 d-flex">
+            <!-- large image on left -->
+            <div class="col-sm-8 col-12 d-flex flex-column">
+              <div class="story-tile story-large flex-grow-1 mb-2">
                 <img
                   src="./public/road to peace.png"
                   alt="Joshua's Road to Peace"
-                  class="img-fluid w-100 h-100 radius-16"
+                  class="img-fluid w-100 radius-16 h-100"
                   style="object-fit: cover; transform: scaleX(-1)"
                 />
               </div>
               <p
-                class="story- fw-bold fs-20 mt-2"
-                style="line-height: 100%; text-decoration: underline"
+                class="story fw-bold fs-6 fs-md-5 text-decoration-underline"
+                style="line-height: 1"
               >
                 Joshua's Road to Peace
               </p>
             </div>
 
-            <div class="col-sm-4 col-xs-12">
-              <div class="story-tile">
+            <!-- smaller images on right -->
+            <div
+              class="col-sm-4 col-12 d-flex flex-column flex-xxs-row gap-2 mt-2 mt-sm-0"
+            >
+              <div class="story-tile flex-fill">
                 <img
                   src="./public/any means.png"
                   alt="By Any Means Necessary"
                   class="img-fluid radius-16"
                 />
-                <p class="story-caption">By Any Means Necessary</p>
+                <p class="story-caption fs-6 fs-md-5">By Any Means Necessary</p>
               </div>
-              <div class="story-tile">
+              <div class="story-tile flex-fill">
                 <img
                   src="./public/hope.png"
                   alt="Holding on to Hope"
                   class="img-fluid radius-16"
                 />
-                <p class="story-caption">Holding on to Hope</p>
+                <p class="story-caption fs-6 fs-md-5">Holding on to Hope</p>
               </div>
             </div>
           </div>
@@ -526,92 +537,78 @@
     </section>
 
     <!-- footer section  -->
-    <footer class="container-fluid">
-      <div class="container-lg">
-        <div class="row footer-main d-flex justify-content-between">
-          <!-- Left Column: Logo, Address, Phone, Social -->
-          <div class="col-md-4 col-sm-12 footer-left">
-            <!-- Logo -->
-            <section class="d-flex align-items-center mb-4 gap-1 logo-size">
-              <img src="./public/logo-black.svg" alt="logo" class="logo-icon" />
-              <span class="logo-text">
-                <h1 class="">Rock Solid</h1>
-                <p>CHRISTIAN CHURCH</p>
-              </span>
-            </section>
-            <div class="d-grid gap-3">
-              <p class="fs-18 line-height-24 fw-normal">
-                11340 W. Bell Road, Suite 200<br />Surprise, AZ 85378
-              </p>
-              <p class="fs-18 line-height-24 fw-normal">(000) 000-0000</p>
-            </div>
-            <div class="footer-social">
-              <a href="#" class="social-icon"
-                ><i class="fa-brands fa-facebook-f fs-4"></i
-              ></a>
-              <a href="#" class="social-icon">
-                <i class="fa-brands fa-x-twitter fs-4"></i>
-              </a>
-              <a href="#" class="social-icon"
-                ><i class="fa-brands fa-instagram fs-4"></i
-              ></a>
-              <a href="#" class="social-icon"
-                ><i class="fa-brands fa-youtube fs-4"></i
-              ></a>
-            </div>
-          </div>
+  <footer class="container-fluid">
+  <div class="container-lg">
+    <div class="row d-flex justify-content-between mb-5 flex-column flex-lg-row">
+      <!-- Left Column: Logo, Address, Phone, Social -->
+      <div class="col-lg-4 col-12 footer-left mb-4 mb-lg-0">
+        <!-- Logo stays as original -->
+        <section class="d-flex align-items-end justify-content-center justify-content-lg-start mb-4 gap-1 logo-size w-100">
+          <img src="./public/logo-black.svg" alt="logo" class="logo-icon" />
+          <span class="logo-text">
+            <h1 class="fs-28 fw-900 lh-48 m-0 text-start">Rock Solid</h1>
+            <p class="fw-light m-0">CHRISTIAN CHURCH</p>
+          </span>
+        </section>
 
-          <!-- Right Column: Buttons and Links -->
-          <div
-            class="col-md-8 col-sm-12 footer-right d-flex flex-column justify-content-end align-items-end"
-          >
-            <!-- Top Buttons -->
-            <div class="footer-buttons text-right">
-              <button type="button" class="btn btn-dark btn-lg">
-                PLAN A VISIT
-              </button>
-              <button type="button" class="btn btn-outline btn-lg">
-                Log In
-              </button>
-            </div>
+        <div class="d-grid gap-3 text-center text-lg-start">
+          <p class="fs-18 line-height-24 fw-normal">
+            11340 W. Bell Road, Suite 200<br />Surprise, AZ 85378
+          </p>
+          <p class="fs-18 line-height-24 fw-normal">(000) 000-0000</p>
+        </div>
+        <div class="d-flex gap-2 gap-lg-3 justify-content-center justify-content-lg-start mt-3">
+          <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f fs-4"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter fs-4"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-instagram fs-4"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-youtube fs-4"></i></a>
+        </div>
+      </div>
 
-            <!-- Link Columns -->
-            <div class="footer-links d-flex gap-4">
-              <div class="">
-                <h4>QUICK LINKS</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Rock Solid</a></li>
-                  <li><a href="#">Locations</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Messages</a></li>
-                  <li><a href="#">Ministries</a></li>
-                  <li><a href="#">Serving</a></li>
-                </ul>
-              </div>
-              <div class="">
-                <h4>GET IN TOUCH</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#">Plan a Visit Request</a></li>
-                  <li><a href="#">Prayer</a></li>
-                  <li><a href="#">Get Help</a></li>
-                  <li><a href="#">Job Openings</a></li>
-                  <li><a href="#">Report an Issue</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <!-- Right Column: Buttons and Links -->
+      <div class="col-lg-8 col-12 footer-right d-flex flex-column justify-content-center align-items-center align-items-lg-end">
+        <!-- Top Buttons -->
+        <div class="footer-buttons mb-3 text-center text-lg-end">
+          <button type="button" class="btn btn-dark btn-lg">PLAN A VISIT</button>
+          <button type="button" class="btn btn-outline btn-lg">Log In</button>
         </div>
 
-        <!-- Footer Bottom -->
-        <div class="row footer-bottom">
-          <div class="col-xs-12 text-start">
-            <p>
-              &copy; 2025 | <a href="#">Terms of Service</a> |
-              <a href="#">Privacy Policy</a>
-            </p>
+        <!-- Link Columns: keep side by side always -->
+        <div class="footer-links d-flex gap-4 justify-content-center justify-content-lg-end">
+          <div>
+            <h4>QUICK LINKS</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">About Rock Solid</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Messages</a></li>
+              <li><a href="#">Ministries</a></li>
+              <li><a href="#">Serving</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>GET IN TOUCH</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Plan a Visit Request</a></li>
+              <li><a href="#">Prayer</a></li>
+              <li><a href="#">Get Help</a></li>
+              <li><a href="#">Job Openings</a></li>
+              <li><a href="#">Report an Issue</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="row footer-bottom">
+      <div class="col-12 text-center text-lg-start">
+        <p>&copy; 2025 | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
   </body>
 </html>
