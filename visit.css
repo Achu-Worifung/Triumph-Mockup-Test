@@ -26,7 +26,8 @@
 .span-first,
 .span-last,
 .love {
-  line-height: 60px;
+  line-height: 40px;
+  letter-spacing: 0%;
   font-family: "Inter", sans-serif;
 }
 
