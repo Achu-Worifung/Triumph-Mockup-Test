@@ -57,7 +57,7 @@
         >
           <!-- Logo -->
           <section
-            class="position-absolute d-flex align-items-center gap-1 logo-section"
+            class="position-absolute d-flex justify-content-start align-items-end gap-1 logo-section"
           >
             <img src="./public/logo.svg" alt="logo" />
             <span class="logo-text">
@@ -68,10 +68,10 @@
 
           <!-- Navigation -->
           <section
-            class="mx-auto justify-content-center gap-1 p-2 center-nav position-relative d-none d-lg-flex"
+            class="mx-auto justify-content-center gap-1 p-lg-2 center-nav position-relative d-none d-xl-flex"
           >
             <ul
-              class="d-flex align-items-center list-unstyled justify-content-center mx-auto d-flex gap-2 align-items-center m-0 pe-0"
+              class="d-flex align-items-center list-unstyled justify-content-center mx-auto d-flex gap-1 align-items-center m-0 pe-0"
               id="main-nav"
             >
               <li class="nav-indicator">
@@ -123,19 +123,25 @@
                   >Give Online</a
                 >
               </li>
+               <li
+            class="menu-icon bg-light text-dark nav-indicator "
+          >
+            <i class="fa-solid fa-bars" style="font-size: 22px"></i>
+            </li>
             </ul>
             <span class="indicator"></span>
           </section>
 
           <span
-            class="menu-icon bg-light text-dark nav-indicator d-flex d-lg-none mobile-menu position-absolute end-0 me-3"
+            class="menu-icon bg-light text-dark nav-indicator d-flex d-xl-none mobile-menu position-absolute end-0 me-3"
           >
             <i class="fa-solid fa-bars" style="font-size: 22px"></i>
           </span>
 
           <!-- Right account -->
           <section
-            class="account-section d-flex align-items-center justify-content-center d-none d-lg-flex"
+          role="button"
+            class="account-section d-flex align-items-center justify-content-center d-none d-xl-flex c"
             id="account"
           >
             <i class="fa-regular fa-user"></i>
@@ -190,7 +196,7 @@
 
         <!-- social icons  -->
         <div
-          class="d-none d-lg-flex align-items-center gap-3 text-white pr-24px position-absolute social-icons"
+          class="d-none d-xl-flex align-items-center gap-3 text-white pr-24px position-absolute social-icons"
         >
           <i class="fa-brands fa-facebook-f fs-4"></i>
           <i class="fa-brands fa-x-twitter fs-4"></i>
@@ -202,7 +208,7 @@
     </div>
 
     <!-- Welcome to Rock Solid section -->
-    <section class="container mt-4 pt-5">
+    <section class="container mt-4 pt-5 appear">
       <div class="row align-items-center gy-4">
         <!-- Left -->
         <div class="col-12 col-lg-6 text-center text-lg-start">
@@ -386,6 +392,7 @@
         and connect with a vibrant community!
       </p>
     </section>
+    
     <!-- swiper section  -->
     <div class="swiper mySwiper container-fluid px-4">
       <div class="swiper-wrapper">
@@ -492,7 +499,6 @@
         <!-- right images -->
         <div class="col-lg-7 col-12">
           <div class="row g-2 d-flex">
-            <!-- large image on left -->
             <div class="col-sm-8 col-12 d-flex flex-column">
               <div class="story-tile story-large flex-grow-1 mb-2">
                 <img
@@ -510,7 +516,6 @@
               </p>
             </div>
 
-            <!-- smaller images on right -->
             <div
               class="col-sm-4 col-12 d-flex flex-column flex-xxs-row gap-2 mt-2 mt-sm-0"
             >
@@ -540,9 +545,8 @@
   <footer class="container-fluid">
   <div class="container-lg">
     <div class="row d-flex justify-content-between mb-5 flex-column flex-lg-row">
-      <!-- Left Column: Logo, Address, Phone, Social -->
       <div class="col-lg-4 col-12 footer-left mb-4 mb-lg-0">
-        <!-- Logo stays as original -->
+
         <section class="d-flex align-items-end justify-content-center justify-content-lg-start mb-4 gap-1 logo-size w-100">
           <img src="./public/logo-black.svg" alt="logo" class="logo-icon" />
           <span class="logo-text">
@@ -565,15 +569,12 @@
         </div>
       </div>
 
-      <!-- Right Column: Buttons and Links -->
       <div class="col-lg-8 col-12 footer-right d-flex flex-column justify-content-center align-items-center align-items-lg-end">
-        <!-- Top Buttons -->
         <div class="footer-buttons mb-3 text-center text-lg-end">
           <button type="button" class="btn btn-dark btn-lg">PLAN A VISIT</button>
           <button type="button" class="btn btn-outline btn-lg">Log In</button>
         </div>
 
-        <!-- Link Columns: keep side by side always -->
         <div class="footer-links d-flex gap-4 justify-content-center justify-content-lg-end">
           <div>
             <h4>QUICK LINKS</h4>
@@ -600,7 +601,6 @@
       </div>
     </div>
 
-    <!-- Footer Bottom -->
     <div class="row footer-bottom">
       <div class="col-12 text-center text-lg-start">
         <p>&copy; 2025 | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
