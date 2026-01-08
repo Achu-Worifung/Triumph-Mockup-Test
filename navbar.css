@@ -95,28 +95,7 @@ img {
   max-width: 100%;
 }
 
-.mainstage {
-  padding: 0 !important;
-  margin: 0;
-  position: relative;
-}
 
-.mainstage section {
-  position: absolute;
-  color: white;
-}
-
-.mainstage section:nth-child(2) {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.mainstage section:nth-child(3) {
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .indicator {
   background-color: #ffffff33;

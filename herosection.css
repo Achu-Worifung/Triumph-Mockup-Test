@@ -1,58 +1,79 @@
 .hero-content {
-    color: white;
+  color: white;
 }
 
 .hero-title {
-    font-weight: 900;
-    font-size: 5vw;
-    line-height: 96px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-weight: 900;
+  font-size: 5vw;
+  line-height: 96px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.mainstage {
+  padding: 0 !important;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
 }
 
+.mainstage section {
+  position: absolute;
+  color: white;
+}
+
+.mainstage section:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainstage section:nth-child(3) {
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .hero-text {
-    width: 80%;
-    max-width: 879px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 879px;
+  margin: 0 auto;
 
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 2vw;
-    line-height: 3vw;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2vw;
+  line-height: 3vw;
 
-    text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.25);
 }
 
 .hero-buttons {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
-
-
 
 .countdown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    width: 80%;
-    max-width: 879px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  max-width: 879px;
+  margin: 0 auto;
 }
 
-
-
-
-    .social-icons {
-    top: 50%;             
-    right: 32px;           
-    transform: translateY(-50%); 
+.social-icons {
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%);
 }
 
 .social-icons i {
-    font-size: 22px;       
+  font-size: 22px;
 }
-
 
 @media (max-width: 991.98px) {
   .mainstage {
