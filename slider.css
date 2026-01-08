@@ -18,6 +18,13 @@
   padding: 20px 0;
 }
 
+.connected 
+{
+    width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -64,9 +71,11 @@
 @keyframes move-backward {
     0% {
         transform: translateX(0);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }
     50% {
         transform: translateX(5px);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
     100% {
         transform: translateX(0);

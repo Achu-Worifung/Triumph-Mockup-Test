@@ -143,6 +143,9 @@ footer {
     margin-bottom: 40px;
     text-align: center;
   }
+  .gospel-img {
+    height: 254px;
+  }
 
   .footer-social {
     justify-content: center;
