@@ -39,4 +39,16 @@
   object-fit: cover;
   border-radius: 8px;
   object-position: center;
+   transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.swiper-card:hover p, .swiper-card:hover
+{
+    color: #ED4B1E !important;
+    cursor: pointer;
+}
+
+.swiper-card:hover img {
+  filter: grayscale(100%) contrast(1.1);
+  transform: scale(1.1);
 }
