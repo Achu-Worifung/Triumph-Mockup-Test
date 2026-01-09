@@ -157,6 +157,30 @@ body.nav-open {
   animation-range: entry 0% cover 30%;
 }
 
+@keyframes textPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pop-text {
+  animation: textPop both;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+
+
+
 @keyframes childFadeIn {
   to {
     opacity: 1;
@@ -230,48 +254,3 @@ body.nav-open {
   }
 }
 
-.indicator {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2); 
-  border-radius: 8px;
-  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 0;
-  pointer-events: none;
-}
-
-#navigation.minimized .nav-indicator:not(.remain) {
-  max-width: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-  pointer-events: none; 
-}
-
-.nav-indicator {
-  position: relative;
-  z-index: 1;
-  transition: opacity 0.01s ease, max-width 0.01s ease, margin 0.01s ease;
-}
-
-#navigation.minimized {
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  min-height: fit-content !important;
-  width: fit-content !important;
-}
-
-#navigation.minimized .nav-indicator:not(.remain) {
-  max-width: 0;
-  max-height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: none;
-}
-
-#navigation.minimized .nav-indicator.remain {
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
