@@ -18,6 +18,12 @@
   padding: 20px 0;
 }
 
+.kids 
+{
+    object-position: -100px 0%;
+    transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
 .connected 
 {
     width: 100%;
@@ -45,8 +51,14 @@
   height: 427px;
   object-fit: cover;
   border-radius: 8px;
-  object-position: center;
    transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.women 
+{
+    object-position: cover;
+    object-position: -100px 0%;
+    transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .swiper-card:hover p, .swiper-card:hover
