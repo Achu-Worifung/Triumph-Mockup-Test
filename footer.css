@@ -5,25 +5,6 @@ footer {
 }
 
 
-
-.footer-left .logo {
-  margin-bottom: 20px;
-}
-
-.footer-left .logo h3 {
-  font-size: 20px;
-  font-weight: 800;
-  margin: 0;
-  color: #000;
-}
-
-.footer-left .logo p {
-  font-size: 12px;
-  margin: 0;
-  color: #666;
-  letter-spacing: 1px;
-}
-
 .footer-contact {
   margin-bottom: 20px;
 }
@@ -33,11 +14,6 @@ footer {
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
-}
-
-.footer-social {
-  display: flex;
-  gap: 12px;
 }
 
 .social-icon {
@@ -58,9 +34,6 @@ footer {
   color: #ffffff !important;
 }
 
-.footer-right {
-  position: relative;
-}
 
 .footer-buttons {
   margin-bottom: 30px;
