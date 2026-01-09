@@ -285,12 +285,13 @@
         <div
           class="mx-auto text-center d-flex flex-column gap-3 w-md-50 align-items-center box"
         >
-          <h1 class="fw-bold text-center text-light  pt-5 mt-lg-4 pop-text">
+          <h1 class="fw-bold text-center text-light pt-5 mt-lg-4 pop-text">
             Our Mission is Simple
           </h1>
           <p class="text-center opacity-80 fw-normal text-light show-text">
             <strong>The gospel is the good news of Jesus:</strong> That Jesus
-            lived a <br  class="d-none d-lg-block"/> sinless life in my place, died the death that I deserved.
+            lived a <br class="d-none d-lg-block" />
+            sinless life in my place, died the death that I deserved.
           </p>
         </div>
 
@@ -422,7 +423,11 @@
         Explore our ministries—find your place, grow in faith,<br />
         and connect with a vibrant community!
       </p>
-      <button id="pause-play" class="mb-2">
+      <button
+        id="pause-play"
+        type="button"
+        class="mb-2 btn-lg btn cursor-pointer"
+      >
         <i class="fa-solid fa-pause"></i>
       </button>
     </section>
@@ -449,7 +454,7 @@
         <div
           class="swiper-slide swiper-card d-flex flex-column align-items-start"
         >
-          <img src="./public/3rd.png" alt="3rd"  class="object-fit-cover kids"/>
+          <img src="./public/3rd.png" alt="3rd" class="object-fit-cover kids" />
           <p class="text-start fw-bold fs-18" style="color: #001d3a">
             Kids <i class="fa-solid fa-angle-right opacity-0"></i>
           </p>
@@ -510,7 +515,6 @@
       class="container-fluid story-section d-flex justify-content-center py-5"
     >
       <div class="container-md row my-4">
-        <!-- left text -->
         <div
           class="col-lg-5 col-12 story-text mb-4 mb-lg-0 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"
         >
@@ -530,44 +534,45 @@
           </button>
         </div>
 
-        <!-- right images -->
         <div class="col-lg-7 col-12">
-          <div class="row g-2 d-flex">
-            <div class="col-sm-8 col-12 d-flex flex-column">
-              <div class="story-tile story-large flex-grow-1 mb-2">
+          <div class="row g-3">
+            <div class="col-sm-8 col-12">
+              <div class="story-tile h-100 d-flex flex-column">
                 <img
                   src="./public/road to peace.png"
                   alt="Joshua's Road to Peace"
-                  class="img-fluid w-100 radius-16 h-100"
+                  class="img-fluid w-100 radius-16 flex-grow-1"
                   style="object-fit: cover; transform: scaleX(-1)"
                 />
+                <p class="story-caption  fs-6 fs-md-5 mt-2 mb-0 text-light">
+                  Joshua's Road to Peace
+                </p>
               </div>
-              <p
-                class="story fw-bold fs-6 fs-md-5 text-decoration-underline"
-                style="line-height: 1"
-              >
-                Joshua's Road to Peace
-              </p>
             </div>
 
-            <div
-              class="col-sm-4 col-12 d-flex flex-column flex-xxs-row gap-2 mt-2 mt-sm-0"
-            >
-              <div class="story-tile flex-fill">
-                <img
-                  src="./public/any means.png"
-                  alt="By Any Means Necessary"
-                  class="img-fluid radius-16"
-                />
-                <p class="story-caption fs-6 fs-md-5">By Any Means Necessary</p>
-              </div>
-              <div class="story-tile flex-fill">
-                <img
-                  src="./public/hope.png"
-                  alt="Holding on to Hope"
-                  class="img-fluid radius-16"
-                />
-                <p class="story-caption fs-6 fs-md-5">Holding on to Hope</p>
+            <div class="col-sm-4 col-12">
+              <div class="d-flex flex-column gap-3 h-100">
+                <div class="story-tile">
+                  <img
+                    src="./public/any means.png"
+                    alt="By Any Means Necessary"
+                    class="img-fluid w-100 radius-16"
+                  />
+                  <p class="story-caption fs-6 fs-md-5 mt-2 mb-0">
+                    By Any Means Necessary
+                  </p>
+                </div>
+
+                <div class="story-tile">
+                  <img
+                    src="./public/hope.png"
+                    alt="Holding on to Hope"
+                    class="img-fluid w-100 radius-16"
+                  />
+                  <p class="story-caption fs-6 fs-md-5 mt-2 mb-0">
+                    Holding on to Hope
+                  </p>
+                </div>
               </div>
             </div>
           </div>

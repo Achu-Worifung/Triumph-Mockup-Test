@@ -69,7 +69,7 @@
 
 .swiper-card:hover img {
   filter: grayscale(100%) contrast(1.1);
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 .swiper-card i {
     transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1) !important;

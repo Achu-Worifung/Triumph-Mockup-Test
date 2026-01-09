@@ -66,11 +66,7 @@ body.nav-open {
   align-items: center;
   justify-content: center;
 }
-#pause-play {
-  cursor: pointer;
-  width: 55px;
-  height: 55px;
-}
+
 #pause-play:hover {
   background-color: #eb3300;
   border-radius: 10px;
